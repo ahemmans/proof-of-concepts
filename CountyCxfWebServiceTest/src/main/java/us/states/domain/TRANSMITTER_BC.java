@@ -103,7 +103,7 @@ public class TRANSMITTER_BC {
 	@Column @NotNull
 	private int TRANSMISSIONID_NUM;
 	
-	@Column
+	@Column @NotNull
 	private String TAX_YR;
 	
 	@Column @NotNull

@@ -1,3 +1,13 @@
+environments:
+  laptop:
+    workingdir: 'C:\Users\Anthony\Documents\My Documents\My Git\Spring-Boot-Projects\CountyCfxWebService-WorkingDir\'
+    
+  desktop:
+    workingdir: 'C:\Users\Anthony\Documents\My Git\Spring-Boot-Projects\CountyCfxWebService-WorkingDir\'
+  
+  peraton:
+    workingdir: 'C:\Users\rhemman\Projects\proof-of-concepts\CountyCfxWebService-WorkingDir\'
+
 server:
   port: 8089
 
@@ -37,7 +47,7 @@ ws:
 context.path: com.tier3llc.countyservice
   
 workingdir:
-  path: 'C:\Users\Anthony\Documents\My Git\Spring-Boot-Projects\CountyCfxWebService-WorkingDir\'
+  path: ${environments.desktop.workingdir}
   
 ---
 
@@ -47,4 +57,23 @@ spring:
       on-profile: laptop
   
 workingdir:
-  path: 'C:\Users\Anthony\Documents\My Documents\My Git\Spring-Boot-Projects\CountyCfxWebService-WorkingDir\'        
+  path: 'C:\Users\Anthony\Documents\My Documents\My Git\Spring-Boot-Projects\CountyCfxWebService-WorkingDir\'
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: hsqldb
+  datasource:
+    driver-class-name: org.hsqldb.jdbc.JDBCDriver
+    url: jdbc:hsqldb:hsql://localhost/testdb
+    username: SA
+    password:
+  jpa:
+    database-platform: org.hibernate.dialect.HSQLDialect
+    show-sql: true
+
+workingdir:
+  path: ${environments.peraton.workingdir}
+       

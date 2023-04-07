@@ -5,6 +5,26 @@ environments:
   desktop:
     workingdir: 'C:\Users\Anthony\Documents\My Git\Spring-Boot-Projects\CountyCfxWebService-WorkingDir\'
   
+  peraton:
+    workingdir: 'C:\Users\rhemman\Projects\proof-of-concepts\CountyCfxWebService-WorkingDir\'
+
+  postgresqldb:
+    datasource:
+      driver-class-name: org.postgresql.Driver
+      url: jdbc:postgresql://localhost:5432/counties
+      username: counties_user
+      password: counties_pwd
+    jpa:
+      database-platform: org.hibernate.dialect.PostgreSQL10Dialect
+
+  hsqldb:
+    datasource:
+      driver-class-name: org.hsqldb.jdbc.JDBCDriver
+      url: jdbc:hsqldb:hsql://localhost/testdb
+      username: SA
+      password:
+    jpa:
+      database-platform: org.hibernate.dialect.HSQLDialect
   
 server:
   port: 8080
@@ -56,7 +76,7 @@ wsdl:
 context.path: com.tier3llc.countyservice
 
 workingdir:
-  path: ${environments.desktop.workingdir}\
+  path: ${environments.peraton.workingdir}
   reports: ${workingdir.path}reports\
 
 ---
@@ -67,8 +87,23 @@ spring:
       on-profile: laptop
   
 workingdir:
-  path: ${environments.laptop.workingdir}\
+  path: ${environments.laptop.workingdir}
   reports: ${workingdir.path}reports\
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: hsqldb
+  datasource:
+    driver-class-name: org.hsqldb.jdbc.JDBCDriver
+    url: jdbc:hsqldb:hsql://localhost/testdb
+    username: SA
+    password:
+  jpa:
+    database-platform: org.hibernate.dialect.HSQLDialect
+    show-sql: true
 
 ---
  
@@ -76,13 +111,23 @@ spring:
   config:
     activate:
       on-profile: it
+  datasource:
+    driver-class-name: ${environments.hsqldb.datasource.driver-class-name}
+    url: ${environments.hsqldb.datasource.url}
+    username: ${environments.hsqldb.datasource.username}
+    password: ${environments.hsqldb.datasource.password}
+  jpa:
+    database-platform: ${environments.hsqldb.jpa.database-platform}
+    show-sql: true
 
 ess.test.role: tester
 
 workingdir:
   #path: ${env.WORKING_DIR}\
-  path: ${environments.desktop.workingdir}\
-  #path: ${environments.laptop.workingdir}\
+  path: ${environments.peraton.workingdir}
+  #path: ${environments.deskop.workingdir}
+  #path: ${environments.laptop.workingdir}
+
   reports: ${workingdir.path}reports\
 
 resources: src/test/resources/
@@ -92,5 +137,4 @@ testdatadir: ${resources}testdata/fs22/
 #testdatadir: ${resources}testdata/
 testfile: ${testdatadir}air_pbba_fs22_testdata.xml
 namespaceold: urn:us:gov:treasury:irs:ext:aca:air:ty22
-namespacenew: urn:us:gov:treasury:irs:ext:aca:air:ty23
- 
+namespacenew: urn:us:gov:treasury:irs:ext:aca:air:ty23    
