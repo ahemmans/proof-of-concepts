@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coun:getCountiesRequest xmlns:coun='http://www.tier3llc.com/countyservice'>
+	<coun:id>34023</coun:id>
+	<coun:state>NJ</coun:state>
+	<coun:filename>fileattach.txt</coun:filename>
+	<coun:mimetype>text/plain</coun:mimetype>
+	<coun:filingseason>2022</coun:filingseason>
+</coun:getCountiesRequest>

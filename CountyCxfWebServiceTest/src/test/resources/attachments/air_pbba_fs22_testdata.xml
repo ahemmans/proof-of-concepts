@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<testdata>
+	<file>
+		<filename>1101939_FS22_1094_1095B_TestData.xml</filename>
+		<newfilename>9391011XYZ_FS22_1094_1095B_TestData.xml</newfilename>
+		<taxyear>2022</taxyear>
+	</file>
+	<file>
+		<filename>1234567_FS22_1094_1095C_TestData.xml</filename>
+		<newfilename>7654321XYZ_FS22_1094_1095C_TestData.xml</newfilename>
+		<taxyear>2022</taxyear>
+	</file>
+</testdata>

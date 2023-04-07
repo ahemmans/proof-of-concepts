@@ -1,0 +1,16 @@
+repositories {
+    mavenCentral()
+}
+
+apply plugin: 'java'
+plugins {
+    id "org.springframework.boot" version "2.7.0"
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+depencencies {
+
+}
+

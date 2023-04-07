@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns2:getCountiesResponse xmlns:ns2='http://www.tier3llc.com/countyservice'>
+	<ns2:county>
+		<ns2:id>24033</ns2:id>
+		<ns2:county>Prince George's County</ns2:county>
+		<ns2:population>890081</ns2:population>
+		<ns2:stAbbr>MD</ns2:stAbbr>
+		<ns2:state>Maryland</ns2:state>
+		<ns2:filename>fileattach.txt</ns2:filename>
+		<ns2:mimetype>text/plain</ns2:mimetype>
+		<ns2:filedata>VGhpcyBpcyBhIHRlc3QgZmlsZSBhdHRhY2htZW50Lg==</ns2:filedata>		
+	</ns2:county>
+</ns2:getCountiesResponse>

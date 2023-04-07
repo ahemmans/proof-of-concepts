@@ -1,0 +1,133 @@
+environments:
+  laptop:
+    workingdir: 'C:\Users\Anthony\Documents\My Documents\My Git\Spring-Boot-Projects\CountyCfxWebService-WorkingDir\'
+    
+  desktop:
+    workingdir: 'C:\Users\Anthony\Documents\My Git\Spring-Boot-Projects\CountyCfxWebService-WorkingDir\'
+  
+  irs:
+    workingdir: 'C:\testdata\'
+  
+server:
+  port: 8080
+
+spring:
+  profiles:
+    active: default
+  application:
+    name: airpbbapoc1
+  main:
+    banner-mode: off
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/counties
+    username: counties_user
+    password: counties_pwd
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQL10Dialect
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+
+logging:
+  level:
+    root: INFO
+    #org.apache.cfx: INFO
+    #org.springframework: INFO
+    #org.springframework.boot.test: INFO
+    #org.springframework.test: INFO
+  #file: countycfxwebsvc.log
+    
+
+#cxf:
+#  path: /ws/*
+
+ess.test.role:
+  
+service:
+  host:
+    url: http://localhost:8089
+#ws:
+# url: ${service.host.url}/ws
+# namespace.uri: http://www.tier3llc.com/countyservice
+# target.namespace: coun
+ 
+#wsdl:
+#  url: ${ws.url}/counties.wsdl
+
+#context.path: com.tier3llc.countyservice
+
+workingdir:
+  path: ${environments.desktop.workingdir}\
+  reports: ${workingdir.path}reports\
+
+resources: src/test/resources/
+formatxslt: ${resources}xslt/identity.xslt
+
+testdatadir: ${resources}testdata/fs23/
+testfile: 
+  #name: ${testdatadir}AIR_DataSource_TY23BC_TEST_SAMPLE.csv
+  #name: ${testdatadir}AIR_DataSource_TY23BC_TEST_SAMPLE_1095A.csv
+  #name: ${testdatadir}AIR_DataSource_TY23BC_TEST_SAMPLE_PAPER.csv
+  headers: TestCaseID-FS23,TestCaseID-REF,TestCaseID-FS24,DocumentSystemFileNm
+  dataFiles: 
+    - ${testdatadir}AIR_DataSource_TY23BC_TEST_SAMPLE_ELECTRONIC.csv
+    - ${testdatadir}AIR_DataSource_TY23BC_TEST_SAMPLE_1095A.csv
+    - ${testdatadir}AIR_DataSource_TY23BC_TEST_SAMPLE_PAPER.csv
+  
+namespaceold: urn:us:gov:treasury:irs:ext:aca:air:ty22
+namespacenew: urn:us:gov:treasury:irs:ext:aca:air:ty23
+
+refactor: pre-merge
+#post-merge
+---
+
+spring:
+  config:
+    activate:
+      on-profile: laptop
+  
+workingdir:
+  path: ${environments.laptop.workingdir}\
+  reports: ${workingdir.path}reports\
+
+---
+ 
+spring:
+  config:
+    activate:
+      on-profile: it
+
+ess.test.role: tester
+
+workingdir:
+  #path: ${env.WORKING_DIR}\
+  path: ${environments.desktop.workingdir}\
+  #path: ${environments.laptop.workingdir}\
+  reports: ${workingdir.path}reports\
+
+#resources: src/test/resources/
+#formatxslt: ${resources}xslt/identity.xslt
+
+#testdatadir: ${resources}testdata/fs23/
+#testfile: ${testdatadir}air_pbba_fs22_testdata.xml
+#namespaceold: urn:us:gov:treasury:irs:ext:aca:air:ty22
+#namespacenew: urn:us:gov:treasury:irs:ext:aca:air:ty23
+
+---
+ 
+spring:
+  config:
+    activate:
+      on-profile: irs
+
+ess.test.role: tester
+
+rootDir: ${environments.irs.workingdir}
+#rootDir: c:/testdata/
+resources: ${rootDir}resources/
+
+testdatadir: ${resources}fs23/
+
+#refactor: pre-merge
+#post-merge      

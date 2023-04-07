@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<p:Form1095ATransmissionUpstream
+	xmlns:p="urn:us:gov:treasury:irs:msg:form1095atransmissionupstreammessage"
+	xmlns:p1="urn:us:gov:treasury:irs:ext:aca:air:ty20a" xmlns:p2="urn:us:gov:treasury:irs:common"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="urn:us:gov:treasury:irs:msg:form1095atransmissionupstreammessage IRS-Form1095ATransmissionUpstreamMessage.xsd ">
+
+
+
+	<p1:Form1095AUpstreamDetail lineNum="0" recordType="">
+		<p1:RecordSequenceNum>1</p1:RecordSequenceNum>
+		<p1:TaxYr>2022</p1:TaxYr>
+		<p1:CorrectedInd>0</p1:CorrectedInd>
+		<p1:VoidInd>0</p1:VoidInd>
+		<p1:MarketplaceId>03.AK*.FFM.001.001</p1:MarketplaceId>
+		<p1:Policy>
+
+			<p1:MarketPlacePolicyNum>NONAME1000001ABC2000000002DEF300GHI</p1:MarketPlacePolicyNum> <!-- Pattern changed, MAX 50 -->
+			<p1:PolicyIssuerNm>Anthem BLUE CROSS - BLUE SHIELD BEST INSURANCE IN THE WORLD SO GET IT NOooW</p1:PolicyIssuerNm>
+			<p1:PolicyStartDt>2020-01-01</p1:PolicyStartDt>
+			<p1:PolicyTerminationDt>2020-12-01</p1:PolicyTerminationDt>
+		</p1:Policy>
+
+
+		<p1:Recipient>
+			<p1:OtherCompletePersonName>
+				<p1:PersonFirstNm>JHONCARLOS FERNANDO</p1:PersonFirstNm>
+				<p1:PersonMiddleNm>ROBERT DELROSES</p1:PersonMiddleNm>
+				<p1:PersonLastNm>AUSTINMSSMARTEST</p1:PersonLastNm>
+				<p1:SuffixNm>Mr THE SMARTEST</p1:SuffixNm>
+
+			</p1:OtherCompletePersonName>
+			<p2:SSN>001000020</p2:SSN>
+			<p1:BirthDt>1975-12-31</p1:BirthDt>
+			<p1:USAddressGrp>
+				<p1:AddressLine1Txt>Eight Nine Avenue AROUND CORNER 123</p1:AddressLine1Txt> <!-- pattern changed, MAX 35 -->
+				<p1:AddressLine2Txt>Suite 214 SECOND FLOOR BLUE BULDING</p1:AddressLine2Txt> <!-- pattern changed, MAX 19 -->
+				<p2:CityNm>Washington</p2:CityNm>
+				<p1:USStateCd>DC</p1:USStateCd>
+				<p2:USZIPCd>11111</p2:USZIPCd>
+				<p2:USZIPExtensionCd>4444</p2:USZIPExtensionCd>
+			</p1:USAddressGrp>
+		</p1:Recipient>
+		<p1:RecipientSpouse>
+			<p1:OtherCompletePersonName>
+				<p1:PersonFirstNm>JHONCARLOS FERNANDO</p1:PersonFirstNm>
+				<p1:PersonMiddleNm>ROBERT DELROSES</p1:PersonMiddleNm>
+				<p1:PersonLastNm>AUSTINMSSMARTEST</p1:PersonLastNm>
+				<p1:SuffixNm>Mr THE SMARTEST</p1:SuffixNm>
+
+			</p1:OtherCompletePersonName>
+			<p2:SSN>001000020</p2:SSN>
+			<p1:BirthDt>1975-12-31</p1:BirthDt>
+		</p1:RecipientSpouse>
+		<p1:CoverageHouseholdGrp>
+			<p1:CoveredIndividual>
+				<p1:InsuredPerson>
+					<p1:OtherCompletePersonName>
+						<p1:PersonFirstNm>Jane</p1:PersonFirstNm>
+						<p1:PersonMiddleNm>Jane</p1:PersonMiddleNm>
+						<p1:PersonLastNm>Cash</p1:PersonLastNm>
+						<p1:SuffixNm>Jane</p1:SuffixNm>
+						<!-- <p1:PersonNameControlTxt>CASH</p1:PersonNameControlTxt> -->
+					</p1:OtherCompletePersonName>
+					<p2:SSN>001011685</p2:SSN>
+					<p1:BirthDt>1975-12-31</p1:BirthDt>
+				</p1:InsuredPerson>
+				<p2:CoverageStartDt>2020-01-01</p2:CoverageStartDt>
+				<p2:CoverageEndDt>2020-12-31</p2:CoverageEndDt>
+			</p1:CoveredIndividual>
+		</p1:CoverageHouseholdGrp>
+		<p1:RecipientPolicyInformation>
+			<p1:JanPremiumInformation>
+				<p1:MonthlyPremiumAmt>100000000000000.00</p1:MonthlyPremiumAmt> <!-- Max 19 -->
+				<p1:MonthlyPremiumSLCSPAmt>100000000000000.00</p1:MonthlyPremiumSLCSPAmt><!-- 
+					Max 19 -->
+				<p1:MonthlyAdvancedPTCAmt>100000000000000.00</p1:MonthlyAdvancedPTCAmt><!-- 
+					Max 19 -->
+			</p1:JanPremiumInformation>
+			<p1:FebPremiumInformation>
+				<p1:MonthlyPremiumAmt>100000000000000.00</p1:MonthlyPremiumAmt>
+				<p1:MonthlyPremiumSLCSPAmt>100000000000000.00</p1:MonthlyPremiumSLCSPAmt>
+				<p1:MonthlyAdvancedPTCAmt>100000000000000.00</p1:MonthlyAdvancedPTCAmt>
+			</p1:FebPremiumInformation>
+			<p1:MarPremiumInformation>
+				<p1:MonthlyPremiumAmt>100000000000000.00</p1:MonthlyPremiumAmt>
+				<p1:MonthlyPremiumSLCSPAmt>100000000000000.00</p1:MonthlyPremiumSLCSPAmt>
+				<p1:MonthlyAdvancedPTCAmt>100000000000000.00</p1:MonthlyAdvancedPTCAmt>
+			</p1:MarPremiumInformation>
+			<p1:AprPremiumInformation>
+				<p1:MonthlyPremiumAmt>100000000000000.00</p1:MonthlyPremiumAmt>
+				<p1:MonthlyPremiumSLCSPAmt>100000000000000.00</p1:MonthlyPremiumSLCSPAmt>
+				<p1:MonthlyAdvancedPTCAmt>100000000000000.00</p1:MonthlyAdvancedPTCAmt>
+			</p1:AprPremiumInformation>
+			<p1:MayPremiumInformation>
+				<p1:MonthlyPremiumAmt>100000000000000.00</p1:MonthlyPremiumAmt>
+				<p1:MonthlyPremiumSLCSPAmt>100000000000000.00</p1:MonthlyPremiumSLCSPAmt>
+				<p1:MonthlyAdvancedPTCAmt>100000000000000.00</p1:MonthlyAdvancedPTCAmt>
+			</p1:MayPremiumInformation>
+			<p1:JunPremiumInformation>
+				<p1:MonthlyPremiumAmt>100000000000000.00</p1:MonthlyPremiumAmt>
+				<p1:MonthlyPremiumSLCSPAmt>100000000000000.00</p1:MonthlyPremiumSLCSPAmt>
+				<p1:MonthlyAdvancedPTCAmt>100000000000000.00</p1:MonthlyAdvancedPTCAmt>
+			</p1:JunPremiumInformation>
+			<p1:JulPremiumInformation>
+				<p1:MonthlyPremiumAmt>100000000000000.00</p1:MonthlyPremiumAmt>
+				<p1:MonthlyPremiumSLCSPAmt>100000000000000.00</p1:MonthlyPremiumSLCSPAmt>
+				<p1:MonthlyAdvancedPTCAmt>100000000000000.00</p1:MonthlyAdvancedPTCAmt>
+			</p1:JulPremiumInformation>
+			<p1:AugPremiumInformation>
+				<p1:MonthlyPremiumAmt>100000000000000.00</p1:MonthlyPremiumAmt>
+				<p1:MonthlyPremiumSLCSPAmt>100000000000000.00</p1:MonthlyPremiumSLCSPAmt>
+				<p1:MonthlyAdvancedPTCAmt>100000000000000.00</p1:MonthlyAdvancedPTCAmt>
+			</p1:AugPremiumInformation>
+			<p1:SepPremiumInformation>
+				<p1:MonthlyPremiumAmt>100000000000000.00</p1:MonthlyPremiumAmt>
+				<p1:MonthlyPremiumSLCSPAmt>100000000000000.00</p1:MonthlyPremiumSLCSPAmt>
+				<p1:MonthlyAdvancedPTCAmt>100000000000000.00</p1:MonthlyAdvancedPTCAmt>
+			</p1:SepPremiumInformation>
+			<p1:OctPremiumInformation>
+				<p1:MonthlyPremiumAmt>100000000000000.00</p1:MonthlyPremiumAmt>
+				<p1:MonthlyPremiumSLCSPAmt>100000000000000.00</p1:MonthlyPremiumSLCSPAmt>
+				<p1:MonthlyAdvancedPTCAmt>100000000000000.00</p1:MonthlyAdvancedPTCAmt>
+			</p1:OctPremiumInformation>
+			<p1:NovPremiumInformation>
+				<p1:MonthlyPremiumAmt>100000000000000.00</p1:MonthlyPremiumAmt>
+				<p1:MonthlyPremiumSLCSPAmt>100000000000000.00</p1:MonthlyPremiumSLCSPAmt>
+				<p1:MonthlyAdvancedPTCAmt>100000000000000.00</p1:MonthlyAdvancedPTCAmt>
+			</p1:NovPremiumInformation>
+			<p1:DecPremiumInformation>
+				<p1:MonthlyPremiumAmt>100000000000000.00</p1:MonthlyPremiumAmt>
+				<p1:MonthlyPremiumSLCSPAmt>100000000000000.00</p1:MonthlyPremiumSLCSPAmt>
+				<p1:MonthlyAdvancedPTCAmt>100000000000000.00</p1:MonthlyAdvancedPTCAmt>
+			</p1:DecPremiumInformation>
+			<p1:AnnualPolicyTotalAmounts>
+				<p1:AnnualPremiumAmt>1200000000000000.00</p1:AnnualPremiumAmt>
+				<p1:AnnualPremiumSLCSPAmt>1200000000000000.00</p1:AnnualPremiumSLCSPAmt>
+				<p1:AnnualAdvancedPTCAmt>1200000000000000.00</p1:AnnualAdvancedPTCAmt>
+			</p1:AnnualPolicyTotalAmounts>
+		</p1:RecipientPolicyInformation>
+	</p1:Form1095AUpstreamDetail>
+
+	<p1:Form1095AUpstreamDetail lineNum="0" recordType="">
+		<p1:RecordSequenceNum>2</p1:RecordSequenceNum>
+		<p1:TaxYr>2022</p1:TaxYr>
+		<p1:CorrectedInd>0</p1:CorrectedInd>
+		<p1:VoidInd>0</p1:VoidInd>
+		<p1:MarketplaceId>03.AK*.FFM.001.001</p1:MarketplaceId>
+		<p1:Policy>
+			<p1:MarketPlacePolicyNum>1000000001</p1:MarketPlacePolicyNum>
+			<p1:PolicyIssuerNm>Anthem</p1:PolicyIssuerNm>
+			<p1:PolicyStartDt>2020-01-01</p1:PolicyStartDt>
+			<p1:PolicyTerminationDt>2020-12-31</p1:PolicyTerminationDt>
+		</p1:Policy>
+		<p1:Recipient>
+			<p1:OtherCompletePersonName>
+				<p1:PersonFirstNm>JHONCARLOS FERNANDO</p1:PersonFirstNm>
+				<p1:PersonMiddleNm>ROBERT DELROSES</p1:PersonMiddleNm>
+				<p1:PersonLastNm>AUSTINMSSMARTEST</p1:PersonLastNm>
+				<p1:SuffixNm>Mr THE SMARTEST</p1:SuffixNm>
+
+			</p1:OtherCompletePersonName>
+			<p2:SSN>001000020</p2:SSN>
+			<p1:BirthDt>1975-12-31</p1:BirthDt>
+			<p1:USAddressGrp>
+				<p1:AddressLine1Txt>223490 REDO DRIVE</p1:AddressLine1Txt>
+				<!-- <p1:AddressLine2Txt></p1:AddressLine2Txt> -->
+				<p2:CityNm>WASHINGTON</p2:CityNm>
+				<p1:USStateCd>DC</p1:USStateCd>
+				<p2:USZIPCd>20706</p2:USZIPCd>
+				<p2:USZIPExtensionCd>1234</p2:USZIPExtensionCd>
+			</p1:USAddressGrp>
+		</p1:Recipient>
+		<p1:RecipientSpouse>
+			<p1:OtherCompletePersonName>
+				<p1:PersonFirstNm>JHONCARLOS FERNANDO</p1:PersonFirstNm>
+				<p1:PersonMiddleNm>ROBERT DELROSES</p1:PersonMiddleNm>
+				<p1:PersonLastNm>AUSTINMSSMARTEST</p1:PersonLastNm>
+				<p1:SuffixNm>Mr THE SMARTEST</p1:SuffixNm>
+
+			</p1:OtherCompletePersonName>
+			<p2:SSN>001000020</p2:SSN>
+			<p1:BirthDt>1975-12-31</p1:BirthDt>
+		</p1:RecipientSpouse>
+		<p1:CoverageHouseholdGrp>
+			<p1:CoveredIndividual>
+				<p1:InsuredPerson>
+					<p1:OtherCompletePersonName>
+						<p1:PersonFirstNm>Jane</p1:PersonFirstNm>
+						<p1:PersonMiddleNm>Jane</p1:PersonMiddleNm>
+						<p1:PersonLastNm>Cash</p1:PersonLastNm>
+						<p1:SuffixNm>Jane</p1:SuffixNm>
+						<!-- <p1:PersonNameControlTxt>CASH</p1:PersonNameControlTxt> -->
+					</p1:OtherCompletePersonName>
+					<p2:SSN>001011685</p2:SSN>
+					<p1:BirthDt>1975-12-31</p1:BirthDt>
+				</p1:InsuredPerson>
+				<p2:CoverageStartDt>2020-01-01</p2:CoverageStartDt>
+				<p2:CoverageEndDt>2020-12-31</p2:CoverageEndDt>
+			</p1:CoveredIndividual>
+		</p1:CoverageHouseholdGrp>
+		<p1:RecipientPolicyInformation>
+			<p1:JanPremiumInformation>
+				<p1:MonthlyPremiumAmt>10.00</p1:MonthlyPremiumAmt>
+				<p1:MonthlyPremiumSLCSPAmt>10.00</p1:MonthlyPremiumSLCSPAmt>
+				<p1:MonthlyAdvancedPTCAmt>10.00</p1:MonthlyAdvancedPTCAmt>
+			</p1:JanPremiumInformation>
+			<p1:FebPremiumInformation>
+				<p1:MonthlyPremiumAmt>10.00</p1:MonthlyPremiumAmt>
+				<p1:MonthlyPremiumSLCSPAmt>10.00</p1:MonthlyPremiumSLCSPAmt>
+				<p1:MonthlyAdvancedPTCAmt>10.00</p1:MonthlyAdvancedPTCAmt>
+			</p1:FebPremiumInformation>
+			<p1:MarPremiumInformation>
+				<p1:MonthlyPremiumAmt>10.00</p1:MonthlyPremiumAmt>
+				<p1:MonthlyPremiumSLCSPAmt>10.00</p1:MonthlyPremiumSLCSPAmt>
+				<p1:MonthlyAdvancedPTCAmt>10.00</p1:MonthlyAdvancedPTCAmt>
+			</p1:MarPremiumInformation>
+			<p1:AprPremiumInformation>
+				<p1:MonthlyPremiumAmt>10.00</p1:MonthlyPremiumAmt>
+				<p1:MonthlyPremiumSLCSPAmt>10.00</p1:MonthlyPremiumSLCSPAmt>
+				<p1:MonthlyAdvancedPTCAmt>10.00</p1:MonthlyAdvancedPTCAmt>
+			</p1:AprPremiumInformation>
+			<p1:MayPremiumInformation>
+				<p1:MonthlyPremiumAmt>10.00</p1:MonthlyPremiumAmt>
+				<p1:MonthlyPremiumSLCSPAmt>10.00</p1:MonthlyPremiumSLCSPAmt>
+				<p1:MonthlyAdvancedPTCAmt>10.00</p1:MonthlyAdvancedPTCAmt>
+			</p1:MayPremiumInformation>
+			<p1:JunPremiumInformation>
+				<p1:MonthlyPremiumAmt>10.00</p1:MonthlyPremiumAmt>
+				<p1:MonthlyPremiumSLCSPAmt>10.00</p1:MonthlyPremiumSLCSPAmt>
+				<p1:MonthlyAdvancedPTCAmt>10.00</p1:MonthlyAdvancedPTCAmt>
+			</p1:JunPremiumInformation>
+			<p1:JulPremiumInformation>
+				<p1:MonthlyPremiumAmt>10.00</p1:MonthlyPremiumAmt>
+				<p1:MonthlyPremiumSLCSPAmt>10.00</p1:MonthlyPremiumSLCSPAmt>
+				<p1:MonthlyAdvancedPTCAmt>10.00</p1:MonthlyAdvancedPTCAmt>
+			</p1:JulPremiumInformation>
+			<p1:AugPremiumInformation>
+				<p1:MonthlyPremiumAmt>10.00</p1:MonthlyPremiumAmt>
+				<p1:MonthlyPremiumSLCSPAmt>10.00</p1:MonthlyPremiumSLCSPAmt>
+				<p1:MonthlyAdvancedPTCAmt>10.00</p1:MonthlyAdvancedPTCAmt>
+			</p1:AugPremiumInformation>
+			<p1:SepPremiumInformation>
+				<p1:MonthlyPremiumAmt>10.00</p1:MonthlyPremiumAmt>
+				<p1:MonthlyPremiumSLCSPAmt>10.00</p1:MonthlyPremiumSLCSPAmt>
+				<p1:MonthlyAdvancedPTCAmt>10.00</p1:MonthlyAdvancedPTCAmt>
+			</p1:SepPremiumInformation>
+			<p1:OctPremiumInformation>
+				<p1:MonthlyPremiumAmt>10.00</p1:MonthlyPremiumAmt>
+				<p1:MonthlyPremiumSLCSPAmt>10.00</p1:MonthlyPremiumSLCSPAmt>
+				<p1:MonthlyAdvancedPTCAmt>10.00</p1:MonthlyAdvancedPTCAmt>
+			</p1:OctPremiumInformation>
+			<p1:NovPremiumInformation>
+				<p1:MonthlyPremiumAmt>10.00</p1:MonthlyPremiumAmt>
+				<p1:MonthlyPremiumSLCSPAmt>10.00</p1:MonthlyPremiumSLCSPAmt>
+				<p1:MonthlyAdvancedPTCAmt>10.00</p1:MonthlyAdvancedPTCAmt>
+			</p1:NovPremiumInformation>
+			<p1:DecPremiumInformation>
+				<p1:MonthlyPremiumAmt>10.00</p1:MonthlyPremiumAmt>
+				<p1:MonthlyPremiumSLCSPAmt>10.00</p1:MonthlyPremiumSLCSPAmt>
+				<p1:MonthlyAdvancedPTCAmt>10.00</p1:MonthlyAdvancedPTCAmt>
+			</p1:DecPremiumInformation>
+			<p1:AnnualPolicyTotalAmounts>
+				<p1:AnnualPremiumAmt>120.00</p1:AnnualPremiumAmt>
+				<p1:AnnualPremiumSLCSPAmt>120.00</p1:AnnualPremiumSLCSPAmt>
+				<p1:AnnualAdvancedPTCAmt>120.00</p1:AnnualAdvancedPTCAmt>
+			</p1:AnnualPolicyTotalAmounts>
+		</p1:RecipientPolicyInformation>
+	</p1:Form1095AUpstreamDetail>
+
+
+	
+
+	<p1:Form1095AUpstreamDetail lineNum="0" recordType="">
+		<p1:RecordSequenceNum>3</p1:RecordSequenceNum>
+		<p1:TaxYr>2022</p1:TaxYr>
+		<p1:CorrectedInd>0</p1:CorrectedInd>
+		<p1:VoidInd>0</p1:VoidInd>
+		<p1:MarketplaceId>03.AK*.FFM.001.001</p1:MarketplaceId>
+		<p1:Policy>
+			<p1:MarketPlacePolicyNum>1000000001</p1:MarketPlacePolicyNum>
+			<p1:PolicyIssuerNm>Anthem</p1:PolicyIssuerNm>
+			<p1:PolicyStartDt>2020-01-01</p1:PolicyStartDt>
+			<p1:PolicyTerminationDt>2020-12-31</p1:PolicyTerminationDt>
+		</p1:Policy>
+		<p1:Recipient>
+			<p1:OtherCompletePersonName>
+				<p1:PersonFirstNm>JOHN</p1:PersonFirstNm>
+				<p1:PersonMiddleNm>R</p1:PersonMiddleNm>
+				<p1:PersonLastNm>AUSTIN</p1:PersonLastNm>
+				<p1:SuffixNm>Mr</p1:SuffixNm>
+				<!-- <p1:PersonNameControlTxt>AUST</p1:PersonNameControlTxt> -->
+			</p1:OtherCompletePersonName>
+			<p2:SSN>001000020</p2:SSN>
+			<!-- <p1:BirthDt>1975-12-31</p1:BirthDt> -->
+			<p1:USAddressGrp>
+				<p1:AddressLine1Txt>1234 Main Street</p1:AddressLine1Txt>
+				<p1:AddressLine2Txt>Apt 123</p1:AddressLine2Txt>
+				<p2:CityNm>LANHAM</p2:CityNm>
+				<p1:USStateCd>MD</p1:USStateCd>
+				<p2:USZIPCd>20706</p2:USZIPCd>
+				<p2:USZIPExtensionCd>1234</p2:USZIPExtensionCd>
+			</p1:USAddressGrp>
+		</p1:Recipient>
+		<p1:RecipientSpouse>
+			<p1:OtherCompletePersonName>
+				<p1:PersonFirstNm>JOHN</p1:PersonFirstNm>
+				<p1:PersonMiddleNm>R</p1:PersonMiddleNm>
+				<p1:PersonLastNm>AUSTIN</p1:PersonLastNm>
+				<p1:SuffixNm>Mr</p1:SuffixNm>
+				<!-- <p1:PersonNameControlTxt>AUST</p1:PersonNameControlTxt> -->
+			</p1:OtherCompletePersonName>
+			<p2:SSN>001000020</p2:SSN>
+			<!-- <p1:BirthDt>1975-03-04</p1:BirthDt> -->
+		</p1:RecipientSpouse>
+		<p1:CoverageHouseholdGrp>
+			<p1:CoveredIndividual>
+				<p1:InsuredPerson>
+					<p1:OtherCompletePersonName>
+						<p1:PersonFirstNm>Jane</p1:PersonFirstNm>
+						<p1:PersonMiddleNm>Jane</p1:PersonMiddleNm>
+						<p1:PersonLastNm>Cash</p1:PersonLastNm>
+						<p1:SuffixNm>Jane</p1:SuffixNm>
+						<!-- <p1:PersonNameControlTxt>CASH</p1:PersonNameControlTxt> -->
+					</p1:OtherCompletePersonName>
+					<p2:SSN>001011685</p2:SSN>
+					<!-- <p2:BirthDt>1975-12-31</p2:BirthDt> -->
+				</p1:InsuredPerson>
+				<p2:CoverageStartDt>2020-01-01</p2:CoverageStartDt>
+				<p2:CoverageEndDt>2020-12-31</p2:CoverageEndDt>
+			</p1:CoveredIndividual>
+		</p1:CoverageHouseholdGrp>
+		<p1:RecipientPolicyInformation>
+			<p1:JanPremiumInformation>
+				<p1:MonthlyPremiumAmt>10.00</p1:MonthlyPremiumAmt>
+				<p1:MonthlyPremiumSLCSPAmt>10.00</p1:MonthlyPremiumSLCSPAmt>
+				<p1:MonthlyAdvancedPTCAmt>10.00</p1:MonthlyAdvancedPTCAmt>
+			</p1:JanPremiumInformation>
+			<p1:FebPremiumInformation>
+				<p1:MonthlyPremiumAmt>10.00</p1:MonthlyPremiumAmt>
+				<p1:MonthlyPremiumSLCSPAmt>10.00</p1:MonthlyPremiumSLCSPAmt>
+				<p1:MonthlyAdvancedPTCAmt>10.00</p1:MonthlyAdvancedPTCAmt>
+			</p1:FebPremiumInformation>
+			<p1:MarPremiumInformation>
+				<p1:MonthlyPremiumAmt>10.00</p1:MonthlyPremiumAmt>
+				<p1:MonthlyPremiumSLCSPAmt>10.00</p1:MonthlyPremiumSLCSPAmt>
+				<p1:MonthlyAdvancedPTCAmt>10.00</p1:MonthlyAdvancedPTCAmt>
+			</p1:MarPremiumInformation>
+			<p1:AprPremiumInformation>
+				<p1:MonthlyPremiumAmt>10.00</p1:MonthlyPremiumAmt>
+				<p1:MonthlyPremiumSLCSPAmt>10.00</p1:MonthlyPremiumSLCSPAmt>
+				<p1:MonthlyAdvancedPTCAmt>10.00</p1:MonthlyAdvancedPTCAmt>
+			</p1:AprPremiumInformation>
+			<p1:MayPremiumInformation>
+				<p1:MonthlyPremiumAmt>10.00</p1:MonthlyPremiumAmt>
+				<p1:MonthlyPremiumSLCSPAmt>10.00</p1:MonthlyPremiumSLCSPAmt>
+				<p1:MonthlyAdvancedPTCAmt>10.00</p1:MonthlyAdvancedPTCAmt>
+			</p1:MayPremiumInformation>
+			<p1:JunPremiumInformation>
+				<p1:MonthlyPremiumAmt>10.00</p1:MonthlyPremiumAmt>
+				<p1:MonthlyPremiumSLCSPAmt>10.00</p1:MonthlyPremiumSLCSPAmt>
+				<p1:MonthlyAdvancedPTCAmt>10.00</p1:MonthlyAdvancedPTCAmt>
+			</p1:JunPremiumInformation>
+			<p1:JulPremiumInformation>
+				<p1:MonthlyPremiumAmt>10.00</p1:MonthlyPremiumAmt>
+				<p1:MonthlyPremiumSLCSPAmt>10.00</p1:MonthlyPremiumSLCSPAmt>
+				<p1:MonthlyAdvancedPTCAmt>10.00</p1:MonthlyAdvancedPTCAmt>
+			</p1:JulPremiumInformation>
+			<p1:AugPremiumInformation>
+				<p1:MonthlyPremiumAmt>10.00</p1:MonthlyPremiumAmt>
+				<p1:MonthlyPremiumSLCSPAmt>10.00</p1:MonthlyPremiumSLCSPAmt>
+				<p1:MonthlyAdvancedPTCAmt>10.00</p1:MonthlyAdvancedPTCAmt>
+			</p1:AugPremiumInformation>
+			<p1:SepPremiumInformation>
+				<p1:MonthlyPremiumAmt>10.00</p1:MonthlyPremiumAmt>
+				<p1:MonthlyPremiumSLCSPAmt>10.00</p1:MonthlyPremiumSLCSPAmt>
+				<p1:MonthlyAdvancedPTCAmt>10.00</p1:MonthlyAdvancedPTCAmt>
+			</p1:SepPremiumInformation>
+			<p1:OctPremiumInformation>
+				<p1:MonthlyPremiumAmt>10.00</p1:MonthlyPremiumAmt>
+				<p1:MonthlyPremiumSLCSPAmt>10.00</p1:MonthlyPremiumSLCSPAmt>
+				<p1:MonthlyAdvancedPTCAmt>10.00</p1:MonthlyAdvancedPTCAmt>
+			</p1:OctPremiumInformation>
+			<p1:NovPremiumInformation>
+				<p1:MonthlyPremiumAmt>10.00</p1:MonthlyPremiumAmt>
+				<p1:MonthlyPremiumSLCSPAmt>10.00</p1:MonthlyPremiumSLCSPAmt>
+				<p1:MonthlyAdvancedPTCAmt>10.00</p1:MonthlyAdvancedPTCAmt>
+			</p1:NovPremiumInformation>
+			<p1:DecPremiumInformation>
+				<p1:MonthlyPremiumAmt>10.00</p1:MonthlyPremiumAmt>
+				<p1:MonthlyPremiumSLCSPAmt>10.00</p1:MonthlyPremiumSLCSPAmt>
+				<p1:MonthlyAdvancedPTCAmt>10.00</p1:MonthlyAdvancedPTCAmt>
+			</p1:DecPremiumInformation>
+			<p1:AnnualPolicyTotalAmounts>
+				<p1:AnnualPremiumAmt>120.00</p1:AnnualPremiumAmt>
+				<p1:AnnualPremiumSLCSPAmt>120.00</p1:AnnualPremiumSLCSPAmt>
+				<p1:AnnualAdvancedPTCAmt>120.00</p1:AnnualAdvancedPTCAmt>
+			</p1:AnnualPolicyTotalAmounts>
+		</p1:RecipientPolicyInformation>
+	</p1:Form1095AUpstreamDetail>
+</p:Form1095ATransmissionUpstream>

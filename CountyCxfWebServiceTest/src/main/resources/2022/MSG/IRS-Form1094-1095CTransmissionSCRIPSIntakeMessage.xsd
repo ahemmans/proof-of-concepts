@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2013 (http://www.altova.com) by Internal Revenue Service (Internal Revenue Service) -->
+<xsd:schema xmlns="urn:us:gov:treasury:irs:msg:form1094-1095BCscripsintakemessage" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:irs="urn:us:gov:treasury:irs:common" xmlns:air7.0="urn:us:gov:treasury:irs:ext:aca:air:7.0"  targetNamespace="urn:us:gov:treasury:irs:msg:form1094-1095BCscripsintakemessage" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0">
+	<xsd:annotation>
+		<xsd:appinfo>
+			<release>ACA Release 7.0 - Paper Based Transmission for Submissions with Forms 1094/95C</release>
+		</xsd:appinfo>
+		<xsd:documentation>Form-1094C (Employer) Transmittal and Form 1095C - Transmittal of Health Insurance Coverage Statements
+			<VersionNum>1.0</VersionNum>
+			<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+		</xsd:documentation>
+	</xsd:annotation>
+	<!-- ===== Imports ===== -->
+	<xsd:import namespace="urn:us:gov:treasury:irs:common" schemaLocation="../COMMON/IRS-CAC.xsd"/>
+	<xsd:import namespace="urn:us:gov:treasury:irs:ext:aca:air:7.0" schemaLocation="../EXT/IRS-EXT-ACA-AIR-SCRIPS1094BC.xsd"/>
+	
+	<!-- ================================ -->
+	<!-- ===== Root Element Declarations ===== -->
+	<!-- ================================ -->
+	<xsd:element name="Form109495CTransmittalSCRIPS" type="Form109495CTransmittalSCRIPSType">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Form 1094-B/1095-B Transmission SCRIPS</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>1</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>The elements associated with 1094-B/1095-B Forms from SCRIPS</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<!-- ======================== -->
+	<!-- ===== Type Definitions ===== -->
+	<!-- ======================== -->
+	<xsd:complexType name="Form109495CTransmittalSCRIPSType">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Form 1094-B/1095-B Transmission SCRIPS Type</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>1</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>The elements associated with 1094-B/1095-B Forms from SCRIPS</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element ref="air7.0:ACABusinessHeaderSCRIPSIdP"/>
+		   	<xsd:element ref="air7.0:Form1094CSCRIPSsubmissionDetail" minOccurs="1" maxOccurs="unbounded"/>
+			<xsd:element ref="air7.0:ACASCRIPSBalanceRecordP"/> <!-- Not needed for IRDB -->
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

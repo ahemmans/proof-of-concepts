@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coun:getCountiesRequest xmlns:coun='http://www.tier3llc.com/countyservice'>
+	<coun:id>24033</coun:id>
+	<coun:filename>scrips23.OCR1010C.2022DSIT1196102.xml</coun:filename>
+	<coun:mimetype>text/xml</coun:mimetype>
+	<coun:filingseason>2022</coun:filingseason>
+</coun:getCountiesRequest>

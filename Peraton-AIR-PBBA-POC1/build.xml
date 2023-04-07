@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="pbba" default="init">
+	<description>Build file to build, compile, and distribute Java Web Appliction using ANT</description>
+	<property file="build.props" />
+	<property environment="env" />
+
+	<target name="init">
+		<echo>==== INIT ====</echo>
+		<mkdir dir="${compile.dir}" />
+	</target>
+
+	<target name="clean">
+		<echo>==== CLEAN ====</echo>
+		<delete dir="${compile.dir}"/>
+	</target>
+			
+	<target name="compile" depends="init">
+		<echo>==== COMPILE ====</echo>
+		<echo>Compiling ${src.dir} files...</echo>
+		<javac debug="on" includeAntRuntime="false" listfiles="yes"
+			srcdir="${src.dir}" 
+			destdir="${compile.dir}" 
+			includes="**/*.java">
+			<classpath>
+				<fileset dir="${lib.dir}">
+					<include name="*.jar" />
+				</fileset>
+			</classpath>		
+		</javac>
+	</target>
+	
+	<target name="jar" depends="compile">
+		<echo>==== JAR ====</echo>
+		<echo>Creating Executable Jar file from ${compile.dir} files...${resources.dir} files...${lib.dir} files...</echo>
+		<jar destfile="target/poc-app.jar" compress="false">
+			<mappedresources>
+				<fileset dir="${compile.dir}" />
+				<globmapper from="*" to="BOOT-INF/classes/*"/>
+			</mappedresources>
+			<mappedresources>
+				<fileset dir="${resources.dir}" erroronmissingdir="false"/>
+				<globmapper from="*" to="BOOT-INF/classes/*"/>
+			</mappedresources>
+			<mappedresources>
+				<fileset dir="${lib.dir}" />
+				<globmapper from="*" to="BOOT-INF/lib/*"/>
+			</mappedresources>
+			<zipfileset src="${lib.dir}/loader/${boot.loader}" />
+			<manifest>
+				<attribute name="Main-Class" value="org.springframework.boot.loader.JarLauncher" />
+				<attribute name="Start-Class" value="${start.class}" />
+			</manifest>
+		</jar>		
+	</target>
+	
+	<!--
+	<taskdef name="wsimport" classname="com.sun.tools.ws.ant.WsImport">
+	 <classpath
+	    path="${lib.dir}"/>
+	</taskdef>
+	-->
+	<target name="ws.generate" >
+	    <exec executable="${java.home}/bin/wsimport">
+	        <arg line="-s ${jaxb.src.dir} -d ${compile.dir} -b ${resources.dir}/xjb/binding.xml -keep -verbose ${resources.dir}/2022/SRV/ACAGetTransmitterBulkRequestService.wsdl"/>
+	    </exec>
+	</target>
+	
+	<target name="ws.generate2">
+		<wsimport
+		    wsdl="${resources.dir}/2022/SRV/ACAGetTransmitterBulkRequestService.wsdl"
+			sourcedestdir="${jaxb.src.dir}"
+			destdir="${compile.dir}"	    
+			binding="${resources.dir}/xjb/binding.xml"
+		    keep="true"
+		    verbose="true"	    
+		    quiet="false"/>
+	</target>
+	
+
+
+	<!--
+	wsimport 
+		-s target/generated-sources/jaxb
+		-d target/classes 
+		-b src/main/resources/xjb/binding.xml 
+		-keep 
+		-verbose 
+		src/main/resources/2022/SRV/ACAGetTransmitterBulkRequestService.wsdl	
+	-->
+	
+	
+
+	
+</project>	

@@ -1,0 +1,62 @@
+pipeline {
+    agent any
+        options {
+            timeout(time:15, unit: 'MINUTES')
+        }
+    environment {
+        CURR_PROJ='CountyCxfWebServiceTest'
+        TARGET_DIR='CountyCxfWebServiceTest\\target'
+        POM_FILE='CountyCxfWebServiceTest\\pom.xml'
+        //cd %WORKSPACE%\\%CURR_PROJ%
+    }
+    tools {
+        jdk 'JDK11'
+        maven 'Maven-3.6.3'
+    }
+    stages {
+        stage ('Initialize') {
+            steps {
+                bat '''
+                    echo 'PATH = %PATH%'
+                    echo 'MAVEN_HOME = %MAVEN_HOME%'
+                    echo 'WORKSPACE = %WORKSPACE%'
+                '''
+            }
+        }
+        stage('Build') {
+            steps {
+                bat 'mvn clean compile -f %POM_FILE%'        
+            }
+        }
+        stage('Unit Tests') {
+            steps {
+                bat 'mvn test -f %POM_FILE%'        
+            }
+        }        
+        stage('Integration Tests') {
+            steps {
+                bat 'mvn verify -f %POM_FILE% -DskipTests.unit=true'
+            }
+            post {
+                success {
+                    cucumber buildStatus: 'UNSTABLE',   
+                        jsonReportDirectory: 'CountyCxfWebServiceTest\\target\\cucumber-reports',          
+                        fileIncludePattern: '**\\cucumber*.json',
+                        trendsLimit: 5
+                }       
+            }
+        }
+        stage('Performance Tests') {
+            steps {
+                bat 'mvn verify -f %POM_FILE% -DskipTests.unit=true -DskipTests.it=true -DskipTests.jmeter=false'
+            }
+            post {
+                success {
+                    perfReport sourceDataFiles: 'CountyCxfWebServiceTest\\target\\jmeter\\results\\*.jtl',
+                    compareBuildPrevious: true
+                }
+            }
+        }
+       
+    }
+}

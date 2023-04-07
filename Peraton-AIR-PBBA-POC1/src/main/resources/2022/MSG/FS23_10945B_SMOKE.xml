@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<p:Form109495BTransmittalUpstream
+	xmlns:p="urn:us:gov:treasury:irs:msg:form1094-1095Btransmitterupstreammessage"
+	xmlns:p1="urn:us:gov:treasury:irs:ext:aca:air:ty22" xmlns:p2="urn:us:gov:treasury:irs:common"
+	xmlns:p3="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="urn:us:gov:treasury:irs:msg:form1094-1095Btransmitterupstreammessage IRS-Form1094-1095BTransmitterUpstreamMessage.xsd ">
+	
+	<!--  FS22_SP3_SMOKE_10945B adhoc after database upgrade  -->
+	
+	<p1:Form1094BUpstreamDetail lineNum="0" recordType="">
+		<p1:SubmissionId>29</p1:SubmissionId>
+		<p1:TaxYr>2022</p1:TaxYr>
+
+		 <p1:BusinessName>
+		  <p1:BusinessNameLine1Txt>REGIT PRODUCTION CENTER</p1:BusinessNameLine1Txt> 
+		  <p1:BusinessNameLine2Txt>Limited</p1:BusinessNameLine2Txt> 
+		  </p1:BusinessName>
+		  <p1:BusinessNameControlTxt>REGI</p1:BusinessNameControlTxt> 
+		  <p2:TINRequestTypeCd>BUSINESS_TIN</p2:TINRequestTypeCd> 
+		  <p2:EmployerEIN>570499950</p2:EmployerEIN> 
+		 <p1:ContactNameGrp>
+		  <p1:PersonFirstNm>Selene</p1:PersonFirstNm> 
+		  <p1:PersonMiddleNm>R</p1:PersonMiddleNm> 
+		  <p1:PersonLastNm>Ortz</p1:PersonLastNm> 
+		  <p1:SuffixNm>Ms</p1:SuffixNm> 
+		  </p1:ContactNameGrp>
+		  <p1:ContactPhoneNum>3015051234</p1:ContactPhoneNum> 
+		 <p1:MailingAddressGrp>
+		 <p1:USAddressGrp>
+		  <p1:AddressLine1Txt>134 Main St</p1:AddressLine1Txt> 
+		  <p1:AddressLine2Txt>Suite 304</p1:AddressLine2Txt> 
+		  <p2:CityNm>Lanham</p2:CityNm> 
+		  <p1:USStateCd>AL</p1:USStateCd> 
+		  <p2:USZIPCd>20877</p2:USZIPCd> 
+		  <p2:USZIPExtensionCd>5999</p2:USZIPExtensionCd> 
+		  </p1:USAddressGrp>
+		  </p1:MailingAddressGrp>
+		<p1:Form1095BAttachedCnt>2</p1:Form1095BAttachedCnt>
+
+
+		<!-- ResponsibleIndividualName -->
+		 <p1:Form1095BUpstreamDetail lineNum="0" recordType="">
+		  <p1:RecordId>1</p1:RecordId> 
+		  <p1:CorrectedInd>0</p1:CorrectedInd> 
+		  <p1:TaxYr>2022</p1:TaxYr> 
+		 <p1:ResponsibleIndividualGrp>
+		 <p1:ResponsibleIndividualName>
+		  <p1:PersonFirstNm>CHARLES</p1:PersonFirstNm> 
+		  <p1:PersonMiddleNm>L</p1:PersonMiddleNm> 
+		  <p1:PersonLastNm>COOK</p1:PersonLastNm> 
+		  <p1:SuffixNm>Mr</p1:SuffixNm> 
+		  </p1:ResponsibleIndividualName>
+		  <p1:PersonNameControlTxt>CHAR</p1:PersonNameControlTxt> 
+		  <p2:TINRequestTypeCd>INDIVIDUAL_TIN</p2:TINRequestTypeCd> 
+		  <p1:TIN>007700651</p1:TIN> 
+		 <!--   <p1:BirthDt>1970-05-16</p1:BirthDt>  --> 
+				<p1:MailingAddressGrp>
+					 <p1:USAddressGrp>
+			  <p1:AddressLine1Txt>8300 Professional Pl</p1:AddressLine1Txt> 
+			  <p1:AddressLine2Txt>Ste 3</p1:AddressLine2Txt> 
+			  <p2:CityNm>Hyattsville</p2:CityNm> 
+			  <p1:USStateCd>MD</p1:USStateCd> 
+			  <p2:USZIPCd>20706</p2:USZIPCd> 
+			  <p2:USZIPExtensionCd>3500</p2:USZIPExtensionCd> 
+			  </p1:USAddressGrp>
+			  </p1:MailingAddressGrp>
+			  <p1:HealthCoverageOriginCd>D</p1:HealthCoverageOriginCd> 
+			  </p1:ResponsibleIndividualGrp>
+			 <p1:SponsoringEmployerInfoGrp>
+			 <p1:BusinessName>
+			  <p1:BusinessNameLine1Txt>GREENLAWN CORPORATION</p1:BusinessNameLine1Txt> 
+			  <p1:BusinessNameLine2Txt>Business</p1:BusinessNameLine2Txt> 
+			  </p1:BusinessName>
+			  <p1:BusinessNameControlTxt>GREE</p1:BusinessNameControlTxt> 
+			  <p2:EIN>570499944</p2:EIN> 
+			  <p2:TINRequestTypeCd>BUSINESS_TIN</p2:TINRequestTypeCd> 
+			 <p1:MailingAddressGrp>
+			 <p1:USAddressGrp>
+			  <p1:AddressLine1Txt>1300 Professional Pl</p1:AddressLine1Txt> 
+			  <p1:AddressLine2Txt>300</p1:AddressLine2Txt> 
+			  <p2:CityNm>New Carrolton</p2:CityNm> 
+			  <p1:USStateCd>MD</p1:USStateCd> 
+			  <p2:USZIPCd>20877</p2:USZIPCd> 
+			  <p2:USZIPExtensionCd>2003</p2:USZIPExtensionCd> 
+			  </p1:USAddressGrp>
+			  </p1:MailingAddressGrp>
+			</p1:SponsoringEmployerInfoGrp>
+			 <p1:IssuerInfoGrp>
+			 <p1:BusinessName>
+			  <p1:BusinessNameLine1Txt>MOTION BANKER SERVICE</p1:BusinessNameLine1Txt> 
+			  <p1:BusinessNameLine2Txt>Business</p1:BusinessNameLine2Txt> 
+			  </p1:BusinessName>
+			  <p1:BusinessNameControlTxt>MOTI</p1:BusinessNameControlTxt> 
+			  <p2:TINRequestTypeCd>BUSINESS_TIN</p2:TINRequestTypeCd> 
+			  <p2:EIN>570499998</p2:EIN> 
+			  <p1:ContactPhoneNum>3015551234</p1:ContactPhoneNum> 
+			 <p1:MailingAddressGrp>
+			 <p1:USAddressGrp>
+			  <p1:AddressLine1Txt>100 Main St</p1:AddressLine1Txt> 
+			  <p1:AddressLine2Txt>D</p1:AddressLine2Txt> 
+			  <p2:CityNm>Great City</p2:CityNm> 
+			  <p1:USStateCd>AL</p1:USStateCd> 
+			  <p2:USZIPCd>20010</p2:USZIPCd> 
+			  <p2:USZIPExtensionCd>5555</p2:USZIPExtensionCd> 
+			  </p1:USAddressGrp>
+			  </p1:MailingAddressGrp>
+			  </p1:IssuerInfoGrp>
+			 <p1:CoveredIndividualGrp>
+			 <p1:CoveredIndividualName>
+			  <p1:PersonFirstNm>ZIA</p1:PersonFirstNm> 
+			  <p1:PersonMiddleNm>S</p1:PersonMiddleNm> 
+			  <p1:PersonLastNm>COOK</p1:PersonLastNm> 
+			  <p1:SuffixNm>Mrs</p1:SuffixNm> 
+			  </p1:CoveredIndividualName>
+			  <p1:PersonNameControlTxt>COOK</p1:PersonNameControlTxt> 
+			  <p2:TINRequestTypeCd>INDIVIDUAL_TIN</p2:TINRequestTypeCd> 
+			  <p2:SSN>007700901</p2:SSN> 
+			   <!--    <p1:BirthDt>1985-05-16</p1:BirthDt>  --> 
+			  <p1:CoveredIndividualAnnualInd>1</p1:CoveredIndividualAnnualInd> 
+			  </p1:CoveredIndividualGrp>
+  
+		</p1:Form1095BUpstreamDetail>
+
+		<!-- ResponsibleBusinessName -->
+		 <p1:Form1095BUpstreamDetail lineNum="0" recordType="">
+			  <p1:RecordId>2</p1:RecordId> 
+			  <p1:CorrectedInd>0</p1:CorrectedInd> 
+			  <p1:TaxYr>2022</p1:TaxYr> 
+			 <p1:ResponsibleIndividualGrp>
+			 <p1:ResponsibleBusinessName>
+			  <p1:BusinessNameLine1Txt>MOTION BANKER SERVICE</p1:BusinessNameLine1Txt> 
+			  <p1:BusinessNameLine2Txt>Limited</p1:BusinessNameLine2Txt> 
+			  </p1:ResponsibleBusinessName>
+			  <p1:BusinessNameControlTxt>MOTI</p1:BusinessNameControlTxt> 
+			  <p2:TINRequestTypeCd>BUSINESS_TIN</p2:TINRequestTypeCd> 
+			  <p1:TIN>570499998</p1:TIN> 
+			 <p1:MailingAddressGrp>
+			 <p1:USAddressGrp>
+			  <p1:AddressLine1Txt>8300 Professional Pl</p1:AddressLine1Txt> 
+			  <p1:AddressLine2Txt>Ste 3</p1:AddressLine2Txt> 
+			  <p2:CityNm>Hyattsville</p2:CityNm> 
+			  <p1:USStateCd>MD</p1:USStateCd> 
+			  <p2:USZIPCd>20706</p2:USZIPCd> 
+			  <p2:USZIPExtensionCd>3500</p2:USZIPExtensionCd> 
+			  </p1:USAddressGrp>
+			  </p1:MailingAddressGrp>
+			  <p1:HealthCoverageOriginCd>g</p1:HealthCoverageOriginCd> 
+			  </p1:ResponsibleIndividualGrp>
+			<p1:SponsoringEmployerInfoGrp>
+				<p1:BusinessName>
+			  <p1:BusinessNameLine1Txt>GREENLAWN CORPORATION</p1:BusinessNameLine1Txt> 
+			  <p1:BusinessNameLine2Txt>Business</p1:BusinessNameLine2Txt> 
+			  </p1:BusinessName>
+			  <p1:BusinessNameControlTxt>GREE</p1:BusinessNameControlTxt> 
+			  <p2:EIN>570499944</p2:EIN> 
+			  <p2:TINRequestTypeCd>BUSINESS_TIN</p2:TINRequestTypeCd> 
+			 <p1:MailingAddressGrp>
+			 <p1:USAddressGrp>
+			  <p1:AddressLine1Txt>1300 Professional Pl</p1:AddressLine1Txt> 
+			  <p1:AddressLine2Txt>300</p1:AddressLine2Txt> 
+			  <p2:CityNm>New Carrolton</p2:CityNm> 
+			  <p1:USStateCd>MD</p1:USStateCd> 
+			  <p2:USZIPCd>20877</p2:USZIPCd> 
+			  <p2:USZIPExtensionCd>2003</p2:USZIPExtensionCd> 
+			  </p1:USAddressGrp>
+				</p1:MailingAddressGrp>
+			</p1:SponsoringEmployerInfoGrp>
+			 <p1:IssuerInfoGrp>
+			 <p1:BusinessName>
+			  <p1:BusinessNameLine1Txt>MOTION BANKER SERVICE</p1:BusinessNameLine1Txt> 
+			  <p1:BusinessNameLine2Txt>Business</p1:BusinessNameLine2Txt> 
+			  </p1:BusinessName>
+			  <p1:BusinessNameControlTxt>MOTI</p1:BusinessNameControlTxt> 
+			  <p2:TINRequestTypeCd>BUSINESS_TIN</p2:TINRequestTypeCd> 
+			  <p2:EIN>570499998</p2:EIN> 
+			  <p1:ContactPhoneNum>3015551234</p1:ContactPhoneNum> 
+			 <p1:MailingAddressGrp>
+			 <p1:USAddressGrp>
+			  <p1:AddressLine1Txt>100 Main St</p1:AddressLine1Txt> 
+			  <p1:AddressLine2Txt>D</p1:AddressLine2Txt> 
+			  <p2:CityNm>Great City</p2:CityNm> 
+			  <p1:USStateCd>AL</p1:USStateCd> 
+			  <p2:USZIPCd>20010</p2:USZIPCd> 
+			  <p2:USZIPExtensionCd>5555</p2:USZIPExtensionCd> 
+			  </p1:USAddressGrp>
+			  </p1:MailingAddressGrp>
+			  </p1:IssuerInfoGrp>
+			<p1:CoveredIndividualGrp>
+			 <p1:CoveredIndividualName>
+			  <p1:PersonFirstNm>CANDICE</p1:PersonFirstNm> 
+			  <p1:PersonMiddleNm>S</p1:PersonMiddleNm> 
+			  <p1:PersonLastNm>COOK</p1:PersonLastNm> 
+			  <p1:SuffixNm>Mrs</p1:SuffixNm> 
+			  </p1:CoveredIndividualName>
+			  <p1:PersonNameControlTxt>COO-</p1:PersonNameControlTxt> 
+			  <p2:TINRequestTypeCd>INDIVIDUAL_TIN</p2:TINRequestTypeCd> 
+			  <p2:SSN>007700801</p2:SSN> 
+			 <!--  <p1:BirthDt>1975-05-16</p1:BirthDt> 
+			  --> 
+			  <p1:CoveredIndividualAnnualInd>1</p1:CoveredIndividualAnnualInd> 
+			  </p1:CoveredIndividualGrp>
+			 <p1:CoveredIndividualGrp>
+			 <p1:CoveredIndividualName>
+			  <p1:PersonFirstNm>ZIA</p1:PersonFirstNm> 
+			  <p1:PersonMiddleNm>S</p1:PersonMiddleNm> 
+			  <p1:PersonLastNm>COOK</p1:PersonLastNm> 
+			  <p1:SuffixNm>Mrs</p1:SuffixNm> 
+			  </p1:CoveredIndividualName>
+			  <p1:PersonNameControlTxt>COOK</p1:PersonNameControlTxt> 
+			  <p2:TINRequestTypeCd>INDIVIDUAL_TIN</p2:TINRequestTypeCd> 
+			  <p2:SSN>007700901</p2:SSN> 
+			 <!--    <p1:BirthDt>1985-05-16</p1:BirthDt>  --> 
+				<p1:CoveredIndividualMonthlyIndGrp>
+					<p1:JanuaryInd>1</p1:JanuaryInd>
+					<p1:FebruaryInd>1</p1:FebruaryInd>
+					<p1:MarchInd>1</p1:MarchInd>
+					<p1:AprilInd>1</p1:AprilInd>
+					<p1:MayInd>1</p1:MayInd>
+					<p1:JuneInd>1</p1:JuneInd>
+					<p1:JulyInd>1</p1:JulyInd>
+					<p1:AugustInd>1</p1:AugustInd>
+					<p1:SeptemberInd>1</p1:SeptemberInd>
+					<p1:OctoberInd>1</p1:OctoberInd>
+					<p1:NovemberInd>1</p1:NovemberInd>
+					<p1:DecemberInd>1</p1:DecemberInd>
+				</p1:CoveredIndividualMonthlyIndGrp>
+			</p1:CoveredIndividualGrp>
+		</p1:Form1095BUpstreamDetail>
+
+		<p1:JuratSignaturePIN>11151980</p1:JuratSignaturePIN>
+		<p1:PersonTitleTxt>CEO</p1:PersonTitleTxt>
+		<p1:SignatureDt>2018-08-17</p1:SignatureDt>
+	</p1:Form1094BUpstreamDetail>
+</p:Form109495BTransmittalUpstream>

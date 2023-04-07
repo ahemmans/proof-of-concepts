@@ -1,0 +1,51 @@
+pipeline {
+    agent any
+        options {
+            timeout(time:15, unit: 'MINUTES')
+        }    
+    environment {
+        CURR_PROJ=  'county-cxf-web-service\\CountyCxfWebService'
+        TARGET_DIR= 'county-cxf-web-service\\CountyCxfWebService\\target'
+        POM_FILE=   'county-cxf-web-service\\CountyCxfWebService\\pom.xml'
+    }
+    tools {
+        jdk 'JDK8'
+        maven 'Maven-3.6.3'
+    }
+    stages {
+        stage ('Initialize') {
+            steps {
+                bat '''
+                    echo 'PATH = %PATH%'
+                    echo 'MAVEN_HOME = %MAVEN_HOME%'
+                    echo 'WORKSPACE = %WORKSPACE%'
+                '''
+            }
+        }
+        stage('Build') {
+            steps {
+                bat 'mvn clean compile -f %POM_FILE%'    
+            }
+        }
+        stage('Unit Tests') {
+            steps {
+                bat 'mvn test -f %POM_FILE%'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                bat 'mvn install -f %POM_FILE% -DskipTests.unit'
+            }
+        }
+    }
+    /*
+    post {
+        success {
+            bat '''
+                rem cd %WORKSPACE%\\%CURR_PROJ%
+                mvn -f %POM_FILE% spring-boot:run
+            '''
+        }
+    }
+    */
+}

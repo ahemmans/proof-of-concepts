@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<p:Form109495BTransmittalUpstream
+	xmlns:p="urn:us:gov:treasury:irs:msg:form1094-1095Btransmitterupstreammessage"
+	xmlns:p1="urn:us:gov:treasury:irs:ext:aca:air:ty22" 
+	xmlns:p2="urn:us:gov:treasury:irs:common"
+	xmlns:p3="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="urn:us:gov:treasury:irs:msg:form1094-1095Btransmitterupstreammessage IRS-Form1094-1095BTransmitterUpstreamMessage.xsd ">
+
+	<p1:Form1094BUpstreamDetail lineNum="0" recordType="">
+		<p1:SubmissionId>100</p1:SubmissionId>
+		<p1:TestScenarioId>2-1</p1:TestScenarioId>
+		<p1:TaxYr>2021</p1:TaxYr>
+
+		<p1:BusinessName>
+			<p1:BusinessNameLine1Txt>ABC INC</p1:BusinessNameLine1Txt>
+			<p1:BusinessNameLine2Txt>CORP</p1:BusinessNameLine2Txt>
+		</p1:BusinessName>
+		<p1:BusinessNameControlTxt>WORK</p1:BusinessNameControlTxt>
+		<p2:TINRequestTypeCd>BUSINESS_TIN</p2:TINRequestTypeCd>
+		<p2:EmployerEIN>000600500</p2:EmployerEIN>
+		<p1:ContactNameGrp>
+			<p1:PersonFirstNm>Jerry</p1:PersonFirstNm>
+			<p1:PersonMiddleNm>K</p1:PersonMiddleNm>
+			<p1:PersonLastNm>Koslin</p1:PersonLastNm>
+			<p1:SuffixNm>N</p1:SuffixNm>
+		</p1:ContactNameGrp>
+		<p1:ContactPhoneNum>4525206520</p1:ContactPhoneNum>
+		<p1:MailingAddressGrp>
+			<p1:USAddressGrp>
+				<p1:AddressLine1Txt>1 Main St</p1:AddressLine1Txt>
+				<p1:AddressLine2Txt>HUO</p1:AddressLine2Txt>
+				<p2:CityNm>Ellicott City</p2:CityNm>
+				<p1:USStateCd>MD</p1:USStateCd>
+				<p2:USZIPCd>21043</p2:USZIPCd>
+				<p2:USZIPExtensionCd>0000</p2:USZIPExtensionCd>
+			</p1:USAddressGrp>
+		</p1:MailingAddressGrp>
+		<p1:Form1095BAttachedCnt>2</p1:Form1095BAttachedCnt>
+
+		<!-- ResponsibleIndividualName -->
+		<p1:Form1095BUpstreamDetail lineNum="0"
+			recordType="">
+			<p1:RecordId>1</p1:RecordId>
+			<p1:TestScenarioId>1-20</p1:TestScenarioId>   
+			<p1:CorrectedInd>0</p1:CorrectedInd>
+			<p1:TaxYr>2021</p1:TaxYr>
+			<p1:ResponsibleIndividualGrp>
+				<p1:ResponsibleIndividualName>
+					<p1:PersonFirstNm>Harry</p1:PersonFirstNm>
+					<p1:PersonMiddleNm>Sr</p1:PersonMiddleNm>
+					<p1:PersonLastNm>Downey</p1:PersonLastNm>
+					<p1:SuffixNm>N</p1:SuffixNm>
+				</p1:ResponsibleIndividualName>
+				<p1:PersonNameControlTxt>HERR</p1:PersonNameControlTxt> 
+				<p2:TINRequestTypeCd>INDIVIDUAL_TIN</p2:TINRequestTypeCd>
+				<p1:TIN>100205263</p1:TIN>
+				<!-- <p1:BirthDt>1985-12-02</p1:BirthDt> -->
+				<p1:MailingAddressGrp>
+					<p1:USAddressGrp>
+						<p1:AddressLine1Txt>1 Main St</p1:AddressLine1Txt>
+						<p1:AddressLine2Txt>HUO</p1:AddressLine2Txt>
+						<p2:CityNm>Ellicott City</p2:CityNm>
+						<p1:USStateCd>MD</p1:USStateCd>
+						<p2:USZIPCd>21043</p2:USZIPCd>
+						<p2:USZIPExtensionCd>0000</p2:USZIPExtensionCd>
+					</p1:USAddressGrp>
+				</p1:MailingAddressGrp>
+				<p1:HealthCoverageOriginCd>D</p1:HealthCoverageOriginCd>
+			</p1:ResponsibleIndividualGrp>
+			<p1:SponsoringEmployerInfoGrp>
+				<p1:BusinessName> 
+					<p1:BusinessNameLine1Txt>ABC INC</p1:BusinessNameLine1Txt>
+					<p1:BusinessNameLine2Txt>INC</p1:BusinessNameLine2Txt>
+				</p1:BusinessName>
+				<p1:BusinessNameControlTxt>ABC</p1:BusinessNameControlTxt>
+				<p2:EIN>052623458</p2:EIN>
+				<p2:TINRequestTypeCd>BUSINESS_TIN</p2:TINRequestTypeCd>
+				<p1:MailingAddressGrp>
+					<p1:USAddressGrp>
+						<p1:AddressLine1Txt>5895 Main St</p1:AddressLine1Txt>
+						<p1:AddressLine2Txt>DR</p1:AddressLine2Txt>
+						<p2:CityNm>Ellicott City</p2:CityNm>
+						<p1:USStateCd>MD</p1:USStateCd>
+						<p2:USZIPCd>21041</p2:USZIPCd>
+						<p2:USZIPExtensionCd>0000</p2:USZIPExtensionCd>
+					</p1:USAddressGrp>
+				</p1:MailingAddressGrp>
+			</p1:SponsoringEmployerInfoGrp>
+			<p1:IssuerInfoGrp>   
+				<p1:BusinessName>
+					<p1:BusinessNameLine1Txt>Well Corp</p1:BusinessNameLine1Txt>
+					<p1:BusinessNameLine2Txt>Corp</p1:BusinessNameLine2Txt>
+				</p1:BusinessName>
+				<p1:BusinessNameControlTxt>CORP</p1:BusinessNameControlTxt>
+				<p2:TINRequestTypeCd>BUSINESS_TIN</p2:TINRequestTypeCd>
+				<p2:EIN>245210653</p2:EIN>
+				<p1:ContactPhoneNum>4105232562</p1:ContactPhoneNum>
+				<p1:MailingAddressGrp>
+					<p1:USAddressGrp>
+						<p1:AddressLine1Txt>1 Main St</p1:AddressLine1Txt>
+						<p1:AddressLine2Txt>D</p1:AddressLine2Txt>
+						<p2:CityNm>Ellicott City</p2:CityNm>
+						<p1:USStateCd>MD</p1:USStateCd>
+						<p2:USZIPCd>21042</p2:USZIPCd>
+						<p2:USZIPExtensionCd>0000</p2:USZIPExtensionCd>
+					</p1:USAddressGrp>
+				</p1:MailingAddressGrp>
+			</p1:IssuerInfoGrp>
+			<p1:CoveredIndividualGrp>
+				<p1:CoveredIndividualName>
+					<p1:PersonFirstNm>ROSY</p1:PersonFirstNm>
+					<p1:PersonMiddleNm>Jr</p1:PersonMiddleNm>
+					<p1:PersonLastNm>ROBERT</p1:PersonLastNm>
+					<p1:SuffixNm>K</p1:SuffixNm>
+				</p1:CoveredIndividualName>
+				<p1:PersonNameControlTxt>HERR</p1:PersonNameControlTxt>
+				<p2:TINRequestTypeCd>INDIVIDUAL_TIN</p2:TINRequestTypeCd>
+				<!-- <p2:SSN>000000003</p2:SSN> -->
+				<p1:BirthDt>1990-10-14</p1:BirthDt>
+				<p1:CoveredIndividualAnnualInd>1</p1:CoveredIndividualAnnualInd>
+			</p1:CoveredIndividualGrp>
+		</p1:Form1095BUpstreamDetail>
+
+		<!-- ResponsibleBusinessName -->
+		<p1:Form1095BUpstreamDetail lineNum="0"
+			recordType="">
+			<p1:RecordId>2</p1:RecordId>
+			<p1:TestScenarioId>1-21</p1:TestScenarioId>
+			<p1:CorrectedInd>0</p1:CorrectedInd>
+			<p1:TaxYr>2021</p1:TaxYr>
+			<p1:ResponsibleIndividualGrp>
+				<p1:ResponsibleBusinessName>
+					<p1:BusinessNameLine1Txt>ABC INC</p1:BusinessNameLine1Txt>
+					<p1:BusinessNameLine2Txt>INC</p1:BusinessNameLine2Txt>
+				</p1:ResponsibleBusinessName>
+				<p1:BusinessNameControlTxt>ABC</p1:BusinessNameControlTxt>
+				<p2:TINRequestTypeCd>BUSINESS_TIN</p2:TINRequestTypeCd>
+				<p1:TIN>000600500</p1:TIN>
+				<p1:MailingAddressGrp>
+					<p1:USAddressGrp>
+						<p1:AddressLine1Txt>1 Main St</p1:AddressLine1Txt>
+						<p1:AddressLine2Txt>Dr</p1:AddressLine2Txt>
+						<p2:CityNm>Ellicott City</p2:CityNm>
+						<p1:USStateCd>MD</p1:USStateCd>
+						<p2:USZIPCd>21043</p2:USZIPCd>
+						<p2:USZIPExtensionCd>0000</p2:USZIPExtensionCd>
+					</p1:USAddressGrp>
+				</p1:MailingAddressGrp>
+				<p1:HealthCoverageOriginCd>G</p1:HealthCoverageOriginCd>
+			</p1:ResponsibleIndividualGrp>
+			<p1:SponsoringEmployerInfoGrp>
+				<p1:BusinessName>
+					<p1:BusinessNameLine1Txt>Well Care</p1:BusinessNameLine1Txt>
+					<p1:BusinessNameLine2Txt>Corp</p1:BusinessNameLine2Txt>
+				</p1:BusinessName>
+				<p1:BusinessNameControlTxt>CARE</p1:BusinessNameControlTxt>
+				<p2:EIN>123456789</p2:EIN>
+				<p2:TINRequestTypeCd>BUSINESS_TIN</p2:TINRequestTypeCd>
+				<p1:MailingAddressGrp>
+					<p1:USAddressGrp>
+						<p1:AddressLine1Txt>450 South Rd</p1:AddressLine1Txt>
+						<p1:AddressLine2Txt>Dr</p1:AddressLine2Txt>
+						<p2:CityNm>Baltimore</p2:CityNm>
+						<p1:USStateCd>MD</p1:USStateCd>
+						<p2:USZIPCd>21065</p2:USZIPCd>
+						<p2:USZIPExtensionCd>0000</p2:USZIPExtensionCd>
+					</p1:USAddressGrp>
+				</p1:MailingAddressGrp>
+			</p1:SponsoringEmployerInfoGrp>
+			<p1:IssuerInfoGrp>
+				<p1:BusinessName>
+					<p1:BusinessNameLine1Txt>Well Corp</p1:BusinessNameLine1Txt>
+					<p1:BusinessNameLine2Txt>Corp</p1:BusinessNameLine2Txt>
+				</p1:BusinessName>
+				<p1:BusinessNameControlTxt>CORP</p1:BusinessNameControlTxt>
+				<p2:TINRequestTypeCd>BUSINESS_TIN</p2:TINRequestTypeCd>
+				<p2:EIN>006520026</p2:EIN>
+				<p1:ContactPhoneNum>4122536520</p1:ContactPhoneNum>
+				<p1:MailingAddressGrp>
+					<p1:USAddressGrp>
+						<p1:AddressLine1Txt>452 South Rd</p1:AddressLine1Txt>
+						<p1:AddressLine2Txt>Dr</p1:AddressLine2Txt>
+						<p2:CityNm>Baltimore</p2:CityNm>
+						<p1:USStateCd>MD</p1:USStateCd>
+						<p2:USZIPCd>21065</p2:USZIPCd>
+						<p2:USZIPExtensionCd>0000</p2:USZIPExtensionCd>
+					</p1:USAddressGrp>
+				</p1:MailingAddressGrp>
+			</p1:IssuerInfoGrp>
+			<p1:CoveredIndividualGrp>
+				<p1:CoveredIndividualName>
+					<p1:PersonFirstNm>PHILLIP</p1:PersonFirstNm>
+					<p1:PersonMiddleNm>T</p1:PersonMiddleNm>
+					<p1:PersonLastNm>LOUIS</p1:PersonLastNm>
+					<p1:SuffixNm>A</p1:SuffixNm>
+				</p1:CoveredIndividualName>
+				<p1:PersonNameControlTxt>HERR</p1:PersonNameControlTxt>
+				<p2:TINRequestTypeCd>INDIVIDUAL_TIN</p2:TINRequestTypeCd>
+				<p2:SSN>652026523</p2:SSN>
+				<!-- <p1:BirthDt>1979-12-31</p1:BirthDt> -->
+				<p1:CoveredIndividualAnnualInd>1</p1:CoveredIndividualAnnualInd>
+			</p1:CoveredIndividualGrp>
+			<p1:CoveredIndividualGrp>
+				<p1:CoveredIndividualName>
+					<p1:PersonFirstNm>MARY</p1:PersonFirstNm>
+					<p1:PersonMiddleNm>L</p1:PersonMiddleNm>
+					<p1:PersonLastNm>LOUIS</p1:PersonLastNm>
+					<p1:SuffixNm>P</p1:SuffixNm>
+				</p1:CoveredIndividualName>
+				<p1:PersonNameControlTxt>HERR</p1:PersonNameControlTxt>
+				<p2:TINRequestTypeCd>INDIVIDUAL_TIN</p2:TINRequestTypeCd>
+				<p2:SSN>520262356</p2:SSN>
+				<!-- <p1:BirthDt>1980-11-15</p1:BirthDt> -->
+				<p1:CoveredIndividualMonthlyIndGrp>
+					<p1:JanuaryInd>1</p1:JanuaryInd>
+					<p1:FebruaryInd>1</p1:FebruaryInd>
+					<p1:MarchInd>1</p1:MarchInd>
+					<p1:AprilInd>1</p1:AprilInd>
+					<p1:MayInd>1</p1:MayInd>
+					<p1:JuneInd>1</p1:JuneInd>
+					<p1:JulyInd>1</p1:JulyInd>
+					<p1:AugustInd>1</p1:AugustInd>
+					<p1:SeptemberInd>1</p1:SeptemberInd>
+					<p1:OctoberInd>1</p1:OctoberInd>
+					<p1:NovemberInd>1</p1:NovemberInd>
+					<p1:DecemberInd>1</p1:DecemberInd>
+				</p1:CoveredIndividualMonthlyIndGrp>
+			</p1:CoveredIndividualGrp>
+		</p1:Form1095BUpstreamDetail>
+		<p1:JuratSignaturePIN>11151980</p1:JuratSignaturePIN> 
+		<p1:PersonTitleTxt>President</p1:PersonTitleTxt> 
+		<p1:SignatureDt>2023-02-01</p1:SignatureDt>
+	</p1:Form1094BUpstreamDetail>
+	<!-- Foreign Address -->
+		
+</p:Form109495BTransmittalUpstream>

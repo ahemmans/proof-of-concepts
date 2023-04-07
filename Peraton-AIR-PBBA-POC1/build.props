@@ -1,0 +1,20 @@
+app.name=Peraton-AIR-PBBA-POC1
+src.dir=src
+resources.dir=${src.dir}/main/resources
+resources.test.dir=${src.dir}/test/resources
+build.dir=target
+dist.dir=${build.dir}
+lib.dir=${build.dir}/lib
+compile.dir=${build.dir}/classes
+jaxb.src.dir=${build.dir}/generated-sources/jaxb
+boot.loader=spring-boot-loader-2.1.6.RELEASE.jar
+#org\springframework\boot\spring-boot-loader\2.1.6.RELEASE\ 
+#org.springframework.boot:spring-boot-loader:2.1.6.RELEASE
+start.class=us.gov.treasury.irs.peraton.poc.PeratonAirPbbaPoc1Application
+
+temp.dir=C:/temp
+#my.docs=C:/Users/Anthony/Documents/My Documents
+#my.wksp=${my.docs}/My Eclipse/workspace
+#my.wksp=${my.docs}/My Git/Spring-Boot-Projects
+
+

@@ -1,0 +1,4387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSpy v2014 rel. 2 sp1 (http://www.altova.com) by Internal Revenue Service (Internal Revenue Service) -->
+<xsd:schema xmlns="urn:us:gov:treasury:irs:ext:aca:air:7.0" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:irs="urn:us:gov:treasury:irs:common" targetNamespace="urn:us:gov:treasury:irs:ext:aca:air:7.0" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0">
+	<xsd:annotation>
+		<xsd:appinfo>
+			<release>ACA Release 7.0 - AIR UpStream and Downstream(TBS) Forms 1094B/C 1095B/C Electronic and Paper</release>
+		</xsd:appinfo>
+		<xsd:documentation>
+		!!!!!!!!!!! NOTICE:  This ACA XML vocabulary is for ACA development purposes !!!!!!!!!! </xsd:documentation>
+	</xsd:annotation>
+	<!-- ===== Imports ===== -->
+	<xsd:import namespace="urn:us:gov:treasury:irs:common" schemaLocation="../COMMON/IRS-CAC.xsd"/>
+	
+	
+	<!-- ============================================= -->
+	<!-- ======= Local CAC Elements  ================ -->
+	<!-- ============================================= -->
+	<xsd:element name="DecALEMonthlyInfoGrpP" type="ALEMemberMonthlyInfoGrpTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Dec Applicable Large Employer Member Detail</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>December Applicable Large Employer Member Detail</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="FebALEMonthlyInfoGrpP" type="ALEMemberMonthlyInfoGrpTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Feb Applicable Large Employer Member Detail</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>February Applicable Large Employer Member Detail</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="ACABusinessHeaderSCRIPSIdP" type="ACABusinessHeaderSCRIPSIdTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>ACA Business Header SCRIPS</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>ACA Business Header SCRIPS</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="ACASCRIPSBalanceRecordP" type="ACASCRIPSBalanceRecordTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>ACA SCRIPS Balance Record</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>ACA SCRIPS Balance Record</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+
+	<xsd:complexType name="ACASCRIPSBalanceRecordTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>SCRIPS Balance Record Type</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>1</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>SCRIPS Balance Record details</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element ref="Numof1094AttachedCntP"/>	
+			<xsd:element ref="Numof1095AttachedCntP"/>
+			<xsd:element ref="Numof1094CorrectedAttachedCntP"/>
+			<xsd:element ref="Numof1095CorrectedAttachedCntP"/>
+			<xsd:element ref="Numof1094OriginalAttachedCntP"/>
+			<xsd:element ref="Numof1095OriginalAttachedCntP"/>
+			<xsd:element ref="CreationDateP"/>
+		</xsd:sequence>
+	</xsd:complexType>	
+	<xsd:element name="CreationDateP" type="PaperDateTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Creation Date</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Creation Date</DescriptionTxt>
+					<DataElementId/>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Numof1095AttachedCntP" type="TotalNumberNonNegativeTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Number Of 1095 Submitted Count</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-27</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt> Number of payee (1095) records submitted</DescriptionTxt>
+					<DataElementId>
+					</DataElementId>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Numof1094AttachedCntP" type="TotalNumberTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Number Of 1094 Submitted Count</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-27</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt> Number of payer (1094) records submitted</DescriptionTxt>
+					<DataElementId>
+					</DataElementId>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Numof1094CorrectedAttachedCntP" type="TotalNumberTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Number Of 1094 Submitted Count</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-27</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt> Number of payer (1094) records submitted</DescriptionTxt>
+					<DataElementId>
+					</DataElementId>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Numof1095CorrectedAttachedCntP" type="TotalNumberTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Number Of 1094 Submitted Count</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-27</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt> Number of payer (1094) records submitted</DescriptionTxt>
+					<DataElementId>
+					</DataElementId>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Numof1094OriginalAttachedCntP" type="TotalNumberTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Number Of 1094 Submitted Count</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-27</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt> Number of payer (1094) records submitted</DescriptionTxt>
+					<DataElementId>
+					</DataElementId>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Numof1095OriginalAttachedCntP" type="TotalNumberTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Number Of 1094 Submitted Count</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-27</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt> Number of payer (1094) records submitted</DescriptionTxt>
+					<DataElementId>
+					</DataElementId>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+		<xsd:simpleType name="TotalNumberTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Total Number Type</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-27</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Count with allowed Values One or Greater</DescriptionTxt> 
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+			<xsd:restriction base="xsd:nonNegativeInteger">
+		 </xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="TotalNumberNonNegativeTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Total Number Type</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-27</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Count with allowed Values Zero or Greater</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+			<xsd:restriction base="xsd:nonNegativeInteger">
+		 </xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="ACAHeaderBusinessCorrelationSCRIPSIdTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>ACA Business Header Business Correlation SCRIPS ID</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-27</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>ACA Business Header Business Correlation SCRIPS ID Type for 109495 B / C Transmissions</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:token">
+			<xsd:pattern value="([0-9a-zA-Z]{8}-[0-9a-zA-Z]{4}-[0-9a-zA-Z]{4}-[0-9a-zA-Z]{4}-[0-9a-zA-Z]{12}:SYS12::SCRIPS(09|18|29):O)"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:complexType name="ACABusinessHeaderSCRIPSIdTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Affordable Care Act (ACA) Transmitter Request Business Header Type</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Global type for the ACA Business Header Type for SCRIPS</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+					<xsd:element name="ACAHeaderBusinessCorrelationSCRIPSIdP" type="ACAHeaderBusinessCorrelationSCRIPSIdTypeP"/>
+					<xsd:element ref="TaxYrP"/>
+					<xsd:element ref="FormTypeCdP"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:element name="Form1094BSCRIPSsubmissionDetail" type="Form1094BSCRIPSsubmissionDetailType">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Form 1094-B SCRIPS Detail</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Form 1094-B SCRIPS details</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Form1094CSCRIPSsubmissionDetail" type="Form1094CSCRIPSsubmissionDetailType">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm> Form 1094-C SCRIPS Details</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Form 1094-C SCRIPS Details</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	
+	<xsd:element name="Form1095BSCRIPSDetail" type="Form1095BSCRIPSDetailType">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Form 1095-B SCRIPS Details</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Form 1095-B SCRIPS Details</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Form1095CSCRIPSDetail" type="Form1095CSCRIPSDetailType">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm> Form 1095-C SCRIPS Details</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Form 1095-C SCRIPS Details</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="JanALEMonthlyInfoGrpP" type="ALEMemberMonthlyInfoGrpTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Jan Applicable Large Employer Member Detail</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>January Applicable Large Employer Member Detail</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="JulALEMonthlyInfoGrpP" type="ALEMemberMonthlyInfoGrpTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>July Applicable Large Employer Member Detail</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>July Applicable Large Employer Member Detail</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element> 
+	<xsd:element name="AugALEMonthlyInfoGrpP" type="ALEMemberMonthlyInfoGrpTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>August Applicable Large Employer Member Detail</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>August Applicable Large Employer Member Detail</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="JunALEMonthlyInfoGrpP" type="ALEMemberMonthlyInfoGrpTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>June Applicable Large Employer Member Detail</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>June Applicable Large Employer Member Detail</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="MarALEMonthlyInfoGrpP" type="ALEMemberMonthlyInfoGrpTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Mar Applicable Large Employer Member Detail</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>March Applicable Large Employer Member Detail</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+		<xsd:element name="AprALEMonthlyInfoGrpP" type="ALEMemberMonthlyInfoGrpTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>April Applicable Large Employer Member Detail</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>April Applicable Large Employer Member Detail</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="MayALEMonthlyInfoGrpP" type="ALEMemberMonthlyInfoGrpTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>May Applicable Large Employer Member Detail</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>May Applicable Large Employer Member Detail</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="MinEssentialCvrOffrCdP" type="MultipleCheckBoxTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Minimum Essential Coverage Offer Indicator</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Minimum Essential Coverage Offer Indicator</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="ALEMemberFTECntP" type="TotalNumberTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Applicable Large Employer Full Time Employee Count</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Count of ALE members who are Full Time Employees</DescriptionTxt>
+					<DataElementId>
+					</DataElementId>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="NovALEMonthlyInfoGrpP" type="ALEMemberMonthlyInfoGrpTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Nov Applicable Large Employer Member Detail</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>November Applicable Large Employer Member Detail</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="OctALEMonthlyInfoGrpP" type="ALEMemberMonthlyInfoGrpTypeP" nillable="true">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Oct Applicable Large Employer Member Detail</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>October Applicable Large Employer Member Detail</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="OtherALEMembersGrpP" type="OtherALEMembersTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Other ALE Members of Aggregated ALE Group</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Other ALE Members of Aggregated ALE Group at anytime during the year</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="ResponsibleEntityGrpP" type="ResponsibleEntityGrpTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Reponsible Entity Group</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2022-06-28</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>Initial version</VersionDescriptionTxt>
+					<DescriptionTxt>Information regarding Reponsible Entity (Individual or Business)</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="ResponsibleIndividualGrpP" type="ResponsibleIndividualGrpTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Policy Holder Information Group</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2022-06-28</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>Initial version</VersionDescriptionTxt>
+					<DescriptionTxt>Information regarding reponsible individual(policy holder)</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="ResponsibleBusinessGrpP" type="ResponsibleBusinessGrpTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Policy Holder Information Group</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2022-06-28</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>Initial version</VersionDescriptionTxt>
+					<DescriptionTxt>Information regarding reponsible individual(policy holder)</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+    <xsd:element name="ResponsibleIndividualNameGrpP" type="ResponsibleIndividualNameGrpType">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Policy Holder Information Group</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2022-06-28</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>Initial version</VersionDescriptionTxt>
+					<DescriptionTxt>Information regarding reponsible individual(policy holder)</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>	
+	<xsd:element name="ResponsibleIndividualFullNameP" type="String35NameTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Responsible Individual Name</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2022-06-28</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Responsible Individual Name</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="ResponsibleIndividualNameP" type="OtherCompletePersonNameTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Responsible Individual Name</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2022-06-28</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Responsible Individual Name</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element> 
+	<xsd:element name="ResponsibleBusinessNameP" type="ResponsibleBusinessNameTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Responsible Individual Name</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2022-06-28</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Responsible Individual Name</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="ResponsibleIndividualNameControlP" type="irs:PersonNameControlType">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Responsible Individual Name Control</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Responsible Individual Name Control</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="ResponsibleBusinessNameControlP" type="irs:BusinessNameControlType">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Employer Name</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Employer Name</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="SeptALEMonthlyInfoGrpP" type="ALEMemberMonthlyInfoGrpTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Sept Applicable Large Employer Member Detail</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>September Applicable Large Employer Member Detail</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<!-- ============================================= -->
+	<!-- ======== Local CAC Type Defintions ================ -->
+	<!-- ============================================= -->
+	<xsd:complexType name="ALEMemberAnnualInfoGrpTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Applicable Large Employer Member Group Type</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Annual Applicable Large Employer Member Group Type</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element ref="MinEssentialCvrOffrCdP" minOccurs="0"/> <!-- Line 23 (a)  -->
+			<xsd:element ref="ALEMemberFTECntP" minOccurs="0"/>      <!-- ACA R7.0 Updated Line 23 (b) -->
+			<xsd:element ref="TotalEmployeeCntP" minOccurs="0"/>    <!-- Line 23 (c)  -->
+			<xsd:element ref="AggregatedGroupIndP" minOccurs="0"/>   <!-- Line 23 (d)  -->
+		</xsd:sequence>
+	</xsd:complexType>
+		<xsd:complexType name="MonthlyALEMemberInfoGrpTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Applicable Large Employer Member Group Type</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Annual Applicable Large Employer Member Group Type</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element ref="JanALEMonthlyInfoGrpP" minOccurs="0"/>
+			<xsd:element ref="FebALEMonthlyInfoGrpP" minOccurs="0"/>
+			<xsd:element ref="MarALEMonthlyInfoGrpP" minOccurs="0"/>
+			<xsd:element ref="AprALEMonthlyInfoGrpP" minOccurs="0"/>
+			<xsd:element ref="MayALEMonthlyInfoGrpP" minOccurs="0"/>
+			<xsd:element ref="JunALEMonthlyInfoGrpP" minOccurs="0"/>
+			<xsd:element ref="JulALEMonthlyInfoGrpP" minOccurs="0"/>
+			<xsd:element ref="AugALEMonthlyInfoGrpP" minOccurs="0"/>
+			<xsd:element ref="SeptALEMonthlyInfoGrpP" minOccurs="0"/>
+			<xsd:element ref="OctALEMonthlyInfoGrpP" minOccurs="0"/>
+			<xsd:element ref="NovALEMonthlyInfoGrpP" minOccurs="0"/>
+			<xsd:element ref="DecALEMonthlyInfoGrpP" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="ALEMemberMonthlyInfoGrpTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Monthly Applicable Large Employer Group Type</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-01-27</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Monthly Applicable Large Employer Group Information</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element ref="MinEssentialCvrOffrCdP" minOccurs="0"/>
+			<xsd:element ref="ALEMemberFTECntP" minOccurs="0"/>
+			<xsd:element ref="TotalEmployeeCntP" minOccurs="0"/>
+			<xsd:element ref="AggregatedGroupIndP" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="Form1094BSCRIPSsubmissionDetailType">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Form 1094-B SCRIPS Detail Type</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Form 1094-B - Transmittal of Health Coverage Information Returns</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element ref="PayerDLNP"/>
+			<xsd:element ref="TaxYrP"/>
+			<xsd:element ref="DelinquentReturnCdP" minOccurs="0"/>
+			<xsd:element ref="DelinquentReturnCdDtP" minOccurs="0"/>
+			<xsd:element ref="OfficialUseOnlyTxtP" minOccurs="0"/>
+			<xsd:element ref="FilerNameP"/>
+			<xsd:element ref="irs:BusinessNameControlTxt" minOccurs="0"/>
+			<xsd:element ref="TINTypeCdP" minOccurs="0"/>
+			<xsd:element ref="EmployerIDNumP" minOccurs="0"/>
+			<xsd:element ref="ContactPersonNameP" minOccurs="0"/>
+			<xsd:element ref="ContactPhoneNumP" minOccurs="0"/>
+			<xsd:element ref="FilerStreetAddressP" minOccurs="0"/>
+			<xsd:element ref="FilerCityorTownP" minOccurs="0"/>
+			<xsd:element ref="FilerStateOrProvinceP" minOccurs="0"/>
+			<xsd:element ref="FilerCntryZIPorFgnPostalCdP" minOccurs="0"/>
+			<xsd:element ref="Reported1095BCntP" minOccurs="0"/>
+			<xsd:element ref="Actual1095BCntP" minOccurs="0"/>
+			<!-- LONG TERM CIVIL PENALTY UWR 220078 -->
+			<xsd:element ref="TotalOrigPayeeCntP"/>
+			<xsd:element ref="TotalOrigSubjPenaltyCntP"/>
+			<xsd:element ref="TotalAmendedPayeeCntP"/>
+			<xsd:element ref="TotalAmendedSubjPenaltyCntP"/>
+			<xsd:element ref="AmendedDocCdP"/>
+			<xsd:element ref="Form1095BSCRIPSDetail" maxOccurs="unbounded"/>
+		</xsd:sequence>
+		        <!-- recordType  and lineNum are  COTS Mandatory Element-->
+		<xsd:attribute name="recordType" type="xsd:string"/>
+		<xsd:attribute name="lineNum" type="xsd:integer"/>
+	</xsd:complexType>
+	<xsd:complexType name="Form1094CSCRIPSsubmissionDetailType">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Form 1094-C SCRIPS Detail Type</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Form 1094-C - Transmittal of Employer-Provided Health Insurance Offer and Coverage
+					Information Returns</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element ref="PayerDLNP"/>
+			<xsd:element ref="TaxYrP"/>
+			<xsd:element ref="CorrectedCheckBoxP" minOccurs="0"/>
+			<xsd:element ref="DelinquentReturnCdP" minOccurs="0"/>
+			<xsd:element ref="DelinquentReturnCdDtP" minOccurs="0"/>
+			<xsd:element ref="OfficialUseOnlyTxtP" minOccurs="0"/>
+		  <!-- Part I Applicable Large Employer Member  -->
+			<xsd:element ref="ALEMemNameP"/>
+		  	<xsd:element ref="ALEMemNameControlP" minOccurs="0"/>
+		  	<xsd:element ref="ALEMemTINTypeCdP" minOccurs="0"/>
+		  	<xsd:element ref="ALEMemEINP" minOccurs="0"/>
+		  	<xsd:element ref="ALEMemStreetAddressP" minOccurs="0"/>
+		  	<xsd:element ref="ALEMemCityorTownP" minOccurs="0"/>
+		  	<xsd:element ref="ALEMemStateOrProvinceP" minOccurs="0"/>
+		  	<xsd:element ref="ALEMemCntryZIPorFgnPostalCdP" minOccurs="0"/>
+			<xsd:element ref="ALEMemContactPersonNameP" minOccurs="0"/>
+			<xsd:element ref="ALEMemContactPhoneNumP" minOccurs="0"/>
+			<xsd:element ref="DGENameP" minOccurs="0"/>
+		  	<xsd:element ref="DGENameControlP" minOccurs="0"/>
+		  	<xsd:element ref="DGETINTypeCdP" minOccurs="0"/>
+		  	<xsd:element ref="DGEEINP" minOccurs="0"/>
+		  	<xsd:element ref="DGEStreetAddressP" minOccurs="0"/>
+		  	<xsd:element ref="DGECityorTownP" minOccurs="0"/>
+		  	<xsd:element ref="DGEStateOrProvinceP" minOccurs="0"/>
+		  	<xsd:element ref="DGECntryZIPorFgnPostalCdP" minOccurs="0"/>
+			<xsd:element ref="DGEContactPersonNameP" minOccurs="0"/>
+			<xsd:element ref="DGEContactPhoneNumP" minOccurs="0"/>
+			<xsd:element ref="Reported1095CCntP" minOccurs="0"/>
+			<xsd:element ref="Actual1095CCntP" minOccurs="0"/>
+			<!-- LONG TERN CIVIL PENALTY UWR 220078 -->
+			<xsd:element ref="TotalOrigPayeeCntP"/>
+			<xsd:element ref="TotalOrigSubjPenaltyCntP"/>
+			<xsd:element ref="TotalAmendedPayeeCntP"/>
+			<xsd:element ref="TotalAmendedSubjPenaltyCntP"/>
+			<xsd:element ref="AmendedDocCdP"/>
+			<xsd:element ref="AuthoritativeTransmittalIndP" minOccurs="1" maxOccurs="1"/>   <!-- UWR 231566 Moved Authoritative Transmittal Indicator from Part II to Part I - ACA R7.0 Updates -->
+		 <!-- Part II ALE Member Information -->
+			<xsd:element ref="TotalNumof1095CforALEMemberP" minOccurs="0"/>
+			<xsd:element ref="AggregatedGroupMemberCdP" minOccurs="0"/>
+		 <!-- Certification of Eligibility -->
+			<xsd:element ref="QualifyingOfferMethodIndP" minOccurs="0"/>
+			<xsd:element ref="NinetyEightPctOfferMethodIndP" minOccurs="0"/>
+	     <!-- Part III ALE Member Information Monthly -->
+  		    <xsd:element ref="YearlyALEMemberDetailP" minOccurs="0"/>
+  		    <xsd:element ref="MonthlyALEMemberDetailP" minOccurs="0"/>
+		 <!-- Part IV Other ALE Members of Aggregated ALE Group -->
+		    <xsd:element ref="OtherALEMembersGrpP" minOccurs="0" maxOccurs="99"/>
+			<xsd:element ref="Form1095CSCRIPSDetail" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+				        <!-- recordType  and lineNum are  COTS Mandatory Element-->
+		<xsd:attribute name="recordType" type="xsd:string"/>
+		<xsd:attribute name="lineNum" type="xsd:integer"/>
+	</xsd:complexType>
+	<xsd:complexType name="Form1095BSCRIPSDetailType">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Form 1095-B SCRIPS Detail Type</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Form 1095-B - Health Coverage Information Return</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element ref="PayeeDLNP"/>
+			<xsd:element ref="CorrectedCheckBoxP" minOccurs="0"/>
+			<xsd:element ref="TaxYrP" minOccurs="0"/>
+		  <!-- Part I Responsible Individual (Responsible Individual) -->
+ 		    <xsd:element ref="ResponsibleEntityGrpP" minOccurs="0"/> <!-- UWR 209864 -->
+			<xsd:element ref="PolicyOriginCdP" minOccurs="0"/>
+		  <!-- Part II Employer Sponsored Coverage -->		
+		  	<xsd:element ref="EmployerNameP" minOccurs="0"/>
+		  	<xsd:element ref="EmployerNameControlP" minOccurs="0"/>
+		  	<xsd:element ref="EmployerTINTypeCdP" minOccurs="0"/>
+		  	<xsd:element ref="EmployerIDNumP" minOccurs="0"/>
+		  	<xsd:element ref="EmployerStreetAddressP" minOccurs="0"/>
+		  	<xsd:element ref="EmployerCityorTownP" minOccurs="0"/>
+		  	<xsd:element ref="EmployerStateOrProvinceP" minOccurs="0"/>
+		  	<xsd:element ref="EmployerCntryZIPorFgnPostalCdP" minOccurs="0"/>
+		  <!-- Part III Issuer or Other Coverage Provider -->
+			<xsd:element ref="IssuerNameP" minOccurs="0"/>
+		  	<xsd:element ref="irs:BusinessNameControlTxt" minOccurs="0"/>
+		  	<xsd:element ref="IssuerTINTypeCdP" minOccurs="0"/>
+		  	<xsd:element ref="IssuerEINP" minOccurs="0"/>
+		  	<xsd:element ref="ContactPhoneNumP" minOccurs="0"/>
+		  	<xsd:element ref="IssuerStreetAddressP" minOccurs="0"/>
+		  	<xsd:element ref="IssuerCityorTownP" minOccurs="0"/>
+		  	<xsd:element ref="IssuerStateOrProvinceP" minOccurs="0"/>
+		  	<xsd:element ref="IssuerCntryZIPorFgnPostalCdP" minOccurs="0"/>
+		  <!-- Part IV Covered Individuals  -->
+		    <xsd:element ref="CoveredIndividualGrpP" minOccurs="0" maxOccurs="99"/>
+		  	<xsd:element ref="PayerDLNP"/>
+		 </xsd:sequence>
+          		        <!-- recordType  and lineNum are  COTS Mandatory Element-->
+		<xsd:attribute name="recordType" type="xsd:string"/>
+		<xsd:attribute name="lineNum" type="xsd:integer"/>
+	</xsd:complexType>
+	<xsd:complexType name="Form1095CSCRIPSDetailType">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Form 1095-C SCRIPS Detail Type</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Form 1095-C  Employer-Provided Health Insurance Offer and Coverage Statement</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element ref="PayeeDLNP"/>
+			<xsd:element ref="CorrectedCheckBoxP" minOccurs="0"/>
+			<xsd:element ref="TaxYrP" minOccurs="0"/>
+			<xsd:element ref="PlanStartMonthP" minOccurs="1" maxOccurs="1"></xsd:element>  <!--  Per UWR 238066 , changed to mandatory on 07/23/2021 -->
+			<!-- ACA R7.0 updates -->
+				<!-- Part I Line 1-6 Employee -->
+			<xsd:choice minOccurs="0">
+				<xsd:element ref="EmployeeNameP" minOccurs="0"/>
+				<xsd:element ref="EmployeeFullNameP" minOccurs="0"/>
+			</xsd:choice>
+			<xsd:element ref="EmployeeNameControlP" minOccurs="0"/>
+			<xsd:element ref="EmployeeTINTypeCdP" minOccurs="0"/>
+			<xsd:element ref="EmployeeSSNumP" minOccurs="0"/>
+			<xsd:element ref="EmployeeStreetAddressP" minOccurs="0"/>
+			<xsd:element ref="EmployeeCityorTownP" minOccurs="0"/>
+			<xsd:element ref="EmployeeStateOrProvinceP" minOccurs="0"/>
+			<xsd:element ref="EmployeeCntryZIPorFgnPostalCdP" minOccurs="0"/>			
+		<!-- Part I Line 7 to 13 Applicable Large Employer Member  -->
+			<xsd:element ref="EmployerNameP" minOccurs="0"/>
+		  	<xsd:element ref="EmployerNameControlP" minOccurs="0"/>
+		  	<xsd:element ref="EmployerTINTypeCdP" minOccurs="0"/>
+		  	<xsd:element ref="EmployerIDNumP" minOccurs="0"/>
+		  	<xsd:element ref="EmployerStreetAddressP" minOccurs="0"/>
+		  	<xsd:element ref="EmployerContactPhoneNumP" minOccurs="0"/>
+		  	<xsd:element ref="EmployerCityorTownP" minOccurs="0"/>
+		  	<xsd:element ref="EmployerStateOrProvinceP" minOccurs="0"/>
+		  	<xsd:element ref="EmployerCntryZIPorFgnPostalCdP" minOccurs="0"/>
+		 <!-- Part II Employee offer and Coverage -->
+		 	<xsd:element ref="AgeNumP" minOccurs="0" maxOccurs="1"/>          <!--  Per UWR 238066 , Added on 07/23/2021 -->
+		    <xsd:element ref="AnnualOfferOfCoverageCdP" minOccurs="0"/>
+			<xsd:element ref="JanOfferOfCoverageCdP" minOccurs="0"/>
+			<xsd:element ref="FebOfferOfCoverageCdP" minOccurs="0"/>
+			<xsd:element ref="MarOfferOfCoverageCdP" minOccurs="0"/>
+			<xsd:element ref="AprOfferOfCoverageCdP" minOccurs="0"/>
+			<xsd:element ref="MayOfferOfCoverageCdP" minOccurs="0"/>
+			<xsd:element ref="JunOfferOfCoverageCdP" minOccurs="0"/>
+			<xsd:element ref="JulOfferOfCoverageCdP" minOccurs="0"/>
+			<xsd:element ref="AugOfferOfCoverageCdP" minOccurs="0"/>
+			<xsd:element ref="SepOfferOfCoverageCdP" minOccurs="0"/>
+			<xsd:element ref="OctOfferOfCoverageCdP" minOccurs="0"/>
+			<xsd:element ref="NovOfferOfCoverageCdP" minOccurs="0"/>
+			<xsd:element ref="DecOfferOfCoverageCdP" minOccurs="0"/>
+			<xsd:element ref="AnnlShrLowestCostMthlyPremAmtP" minOccurs="0"/>
+			<xsd:element ref="JanuaryShrLowestCostMthlyPremAmtP" minOccurs="0"/>
+			<xsd:element ref="FebruaryShrLowestCostMthlyPremAmtP" minOccurs="0"/>
+			<xsd:element ref="MarchShrLowestCostMthlyPremAmtP" minOccurs="0"/>
+			<xsd:element ref="AprilShrLowestCostMthlyPremAmtP" minOccurs="0"/>
+			<xsd:element ref="MayShrLowestCostMthlyPremAmtP" minOccurs="0"/>
+			<xsd:element ref="JuneShrLowestCostMthlyPremAmtP" minOccurs="0"/>
+			<xsd:element ref="JulyShrLowestCostMthlyPremAmtP" minOccurs="0"/>
+			<xsd:element ref="AugustShrLowestCostMthlyPremAmtP" minOccurs="0"/>
+			<xsd:element ref="SeptemberShrLowestCostMthlyPremAmtP" minOccurs="0"/>
+			<xsd:element ref="OctoberShrLowestCostMthlyPremAmtP" minOccurs="0"/>
+			<xsd:element ref="NovemberShrLowestCostMthlyPremAmtP" minOccurs="0"/>
+			<xsd:element ref="DecemberShrLowestCostMthlyPremAmtP" minOccurs="0"/>
+			<xsd:element ref="AnnualSafeHarborCdP" minOccurs="0"/>
+			<xsd:element ref="JanSafeHarborCdP" minOccurs="0"/>
+			<xsd:element ref="FebSafeHarborCdP" minOccurs="0"/>
+			<xsd:element ref="MarSafeHarborCdP" minOccurs="0"/>
+			<xsd:element ref="AprSafeHarborCdP" minOccurs="0"/>
+			<xsd:element ref="MaySafeHarborCdP" minOccurs="0"/>
+			<xsd:element ref="JunSafeHarborCdP" minOccurs="0"/>
+			<xsd:element ref="JulSafeHarborCdP" minOccurs="0"/>
+			<xsd:element ref="AugSafeHarborCdP" minOccurs="0"/>
+			<xsd:element ref="SepSafeHarborCdP" minOccurs="0"/>
+			<xsd:element ref="OctSafeHarborCdP" minOccurs="0"/>
+			<xsd:element ref="NovSafeHarborCdP" minOccurs="0"/>
+			<xsd:element ref="DecSafeHarborCdP" minOccurs="0"/>
+			<xsd:choice minOccurs="0" >
+				<xsd:element ref="AnnualICHRAZipCdP" minOccurs="0"/>
+				<xsd:element ref="MonthlyICHRAZipCdGrpP" minOccurs="0"/>
+			</xsd:choice>
+		 <!-- Part III Covered Individuals -->
+			<xsd:element ref="CoveredIndividualIndP" minOccurs="0"/>
+		 	<xsd:element ref="CoveredIndividualGrpP" minOccurs="0" maxOccurs="99"/> 
+		 	<xsd:element ref="PayerDLNP"/>
+		</xsd:sequence>
+				        <!-- recordType  and lineNum are  COTS Mandatory Element-->
+		<xsd:attribute name="recordType" type="xsd:string"/>
+		<xsd:attribute name="lineNum" type="xsd:integer"/>
+	</xsd:complexType>
+	<xsd:complexType name="MonthIndGrpTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Month Indicator Group Type</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>A group which contains indicators for each month of the year.</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element ref="JanIndP" minOccurs="0"/>
+			<xsd:element ref="FebIndP" minOccurs="0"/>
+			<xsd:element ref="MarIndP" minOccurs="0"/>
+			<xsd:element ref="AprIndP" minOccurs="0"/>
+			<xsd:element ref="MayIndP" minOccurs="0"/>
+			<xsd:element ref="JunIndP" minOccurs="0"/>
+			<xsd:element ref="JulIndP" minOccurs="0"/>
+			<xsd:element ref="AugIndP" minOccurs="0"/>
+			<xsd:element ref="SepIndP" minOccurs="0"/>
+			<xsd:element ref="OctIndP" minOccurs="0"/>
+			<xsd:element ref="NovIndP" minOccurs="0"/>
+			<xsd:element ref="DecIndP" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="OtherALEMembersTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Other ALE Members of Aggregated ALE Group Type</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Other ALE Members of Aggregated ALE Group type at anytime during the year</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element ref="ALEMemNameP" minOccurs="0"/>
+		  	<xsd:element ref="ALEMemNameControlP" minOccurs="0"/>
+		  	<xsd:element ref="ALEMemTINTypeCdP" minOccurs="0"/>
+		  	<xsd:element ref="ALEMemEINP" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="ResponsibleEntityGrpTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Policy Holder Information Group Type</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2022-09-11</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>Initial Version</VersionDescriptionTxt>
+					<DescriptionTxt>Type definition for policy holder information</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:choice minOccurs="0">
+				<xsd:element ref="ResponsibleIndividualGrpP" minOccurs="0"/>
+				<xsd:element ref="ResponsibleBusinessGrpP" minOccurs="0"/>
+			</xsd:choice>			
+			<xsd:element ref="ResponsibleStreetAddressP" minOccurs="0" />
+            <xsd:element ref="ResponsibleCityorTownP" minOccurs="0" />
+            <xsd:element ref="ResponsibleStateOrProvinceP" minOccurs="0"/>
+            <xsd:element ref="ResponsibleCntryZIPorFgnPostalCdP" minOccurs="0"/>
+        </xsd:sequence>					
+	</xsd:complexType>
+	<xsd:complexType name="ResponsibleIndividualGrpTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Policy Holder Information Group Type</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2022-09-11</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>Initial Version</VersionDescriptionTxt>
+					<DescriptionTxt>Type definition for policy holder information</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element ref="ResponsibleIndividualNameGrpP" minOccurs="0"/>
+			<xsd:element ref="ResponsibleIndividualNameControlP" minOccurs="0"/>
+			<xsd:element ref="ResponsibleIndividualTINTypeCdP" minOccurs="0"/>
+			<xsd:element ref="ResponsibleIndividualSSNP" minOccurs="0" />
+			<xsd:element ref="ResponsibleIndividualBirthDtP" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="ResponsibleBusinessGrpTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Policy Holder Information Group Type</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2022-06-28</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>Initial Version</VersionDescriptionTxt>
+					<DescriptionTxt>Type definition for policy holder information</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element ref="ResponsibleBusinessNameP" minOccurs="0"/>
+			<xsd:element ref="ResponsibleBusinessNameControlP" minOccurs="0"/>
+			<xsd:element ref="ResponsibleBusinessTINTypeCdP" minOccurs="0"/>
+			<xsd:element ref="ResponsibleBusinessEINP" minOccurs="0" />
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="OtherCompletePersonNameTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Other Complete Person Name Type</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionDescriptionTxt>Initial Version</VersionDescriptionTxt>
+					<VersionEffectiveBeginDt>2022-06-28</VersionEffectiveBeginDt>
+					<CACInd>Yes</CACInd>
+					<Status>Active</Status>
+					<DescriptionTxt>Global type definition for person's full name where all elements are optional.</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element ref="PersonFirstNmP" minOccurs="0"/>
+			<xsd:element ref="PersonMiddleNmP" minOccurs="0"/>
+			<xsd:element ref="PersonLastNmP" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="ResponsibleIndividualNameGrpType">
+       		<xsd:choice minOccurs="0">
+              <xsd:element ref="ResponsibleIndividualNameP" minOccurs="0"/>
+              <xsd:element ref="ResponsibleIndividualFullNameP" minOccurs="0"/>
+       		</xsd:choice>
+       </xsd:complexType>
+	<xsd:complexType name="ResponsibleBusinessNameTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Business Name Type</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2022-06-28</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>EFileTypes, April 04, 2021</VersionDescriptionTxt>
+					<DescriptionTxt>Type for a Business Name, 2 Name Lines</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element ref="ResponsibleBusinessNameLine1TxtP" minOccurs="0"/>
+			<xsd:element ref="ResponsibleBusinessNameLine2TxtP" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<!-- ============================================= -->
+	<!-- ======= Local Common Basic Elements  ================ -->
+	<!-- ============================================= -->
+ 	<xsd:element name="PersonFirstNmP" type="PersonFirstNameTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Person First Name </DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2022-06-28</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>Update to a standard name</VersionDescriptionTxt>
+					<DescriptionTxt>The first name of a person</DescriptionTxt>
+					<DataElementId>166113</DataElementId>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="PersonLastNmP" type="PersonLastNameTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Person Last Name </DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2022-06-28</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>EFileTypes, December 14, 2007</VersionDescriptionTxt>
+					<DescriptionTxt>The last name of a person</DescriptionTxt>
+					<DataElementId>166583</DataElementId>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="PersonMiddleNmP" type="PersonMiddleNameTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Person Middle Name </DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2022-06-28</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>Initial Version</VersionDescriptionTxt>
+					<DescriptionTxt>The middle name of a person</DescriptionTxt>
+					<DataElementId>166582</DataElementId>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+ 	<xsd:element name="AggregatedGroupIndP" type="CheckBoxTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Aggregated Group Indicator </DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Aggregated Group Indicator</DescriptionTxt>
+					<DataElementId>
+					</DataElementId>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="AnnualOfferOfCoverageCdP" type="OfferCoverageTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Annual Offer of Coverage Cd</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Annual Offer of Coverage Code</DescriptionTxt>
+					<DataElementId>
+					</DataElementId>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="AnnualSafeHarborCdP" type="SafeHarborCdTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Annual Safe Harbor Cd</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Annual Safe Harbor Code</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="AnnlShrLowestCostMthlyPremAmtP" type="AmountTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Annual Share of Lowest Cost Monthly Premium Amount</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-01-27</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Annual Share of Lowest Cost Monthly Premium Amount</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="AprilShrLowestCostMthlyPremAmtP" type="AmountTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>April Share Lowest Cost Monthly Premium Amount</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>April Share Lowest Cost Monthly Premium Amount</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="AprOfferOfCoverageCdP" type="OfferCoverageTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>April Offer Code</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>A code used to indicate the month's offer type</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="AprSafeHarborCdP" type="SafeHarborCdTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>April Safe Harbor Indicator</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-01-27</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>A code used to indicate the month's Safe Harbor code</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="AugOfferOfCoverageCdP" type="OfferCoverageTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Aug Offer Code</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>A code used to indicate the month's offer type</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="AugSafeHarborCdP" type="SafeHarborCdTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Aug Safe Harbor Indicator</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-01-27</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>A code used to indicate the month's Safe Harbor code</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="AugustShrLowestCostMthlyPremAmtP" type="AmountTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>August Share Lowest Cost Monthly Premium Amount</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>August Share Lowest Cost Monthly Premium Amount</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="ContactPhoneNumP" type="ContactPhoneNumberTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Contact Phone Number</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-01-27</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Contact Phone Number</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="CoveredIndividualIndP" type="CheckBoxTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Covered Individual Ind </DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Covered Individual Indicator</DescriptionTxt>
+					<DataElementId>
+					</DataElementId>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="CoveredIndividualMonthlyIndP" type="MonthIndGrpTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Covered Individual Monthly Ind</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-01-27</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 6.2</VersionDescriptionTxt>
+					<DescriptionTxt>Indicator of coverage for each month of the year</DescriptionTxt>
+					<DataElementId/>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="DecemberShrLowestCostMthlyPremAmtP" type="AmountTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>December Share Lowest Cost Monthly Premium Amount</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>December Share Lowest Cost Monthly Premium Amount</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="DecOfferOfCoverageCdP" type="OfferCoverageTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>December Offer Code</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>A code used to indicate the month's offer type</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="DecSafeHarborCdP" type="SafeHarborCdTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>December Safe Harbor Indicator</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-01-27</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>A code used to indicate the month's Safe Harbor code</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="PlanStartMonthP" type="PlanStartMonthTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Plan Start Month</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-04-29</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA R7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Plan Start Month </DescriptionTxt>
+					<DataElementId/>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="EmployeeFullNameP" type="String35NameTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Employee Name</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2022-06-28</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Employee Name
+					</DescriptionTxt>
+					<DataElementId>
+					</DataElementId>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="EmployeeNameP" type="OtherCompletePersonNameTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Employee Name</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2022-06-28</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Employee Name
+					</DescriptionTxt>
+					<DataElementId>
+					</DataElementId>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="EmployeeTINP" type="irs:TINType">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Employee TIN</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2014-04-09</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Employee TIN
+					</DescriptionTxt>
+					<DataElementId>
+					</DataElementId>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="EmployerContactPhoneNumP" type="ContactPhoneNumberTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Employer Contact Phone</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2014-04-09</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt> Employer Contact 	Phone
+					</DescriptionTxt>
+					<DataElementId>
+					</DataElementId>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="FebOfferOfCoverageCdP" type="OfferCoverageTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>February Offer Code</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>A code used to indicate the month's offer type</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="FebSafeHarborCdP" type="SafeHarborCdTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Feb Safe Harbor Indicator</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-01-27</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>A code used to indicate the month's Safe Harbor code</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="FebruaryShrLowestCostMthlyPremAmtP" type="AmountTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>February Share Lowest Cost Monthly Premium Amount</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>February Share Lowest Cost Monthly Premium Amount</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="JanOfferOfCoverageCdP" type="OfferCoverageTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>January Offer Code</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>A code used to indicate the month's offer type</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="JanSafeHarborCdP" type="SafeHarborCdTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>January Safe Harbor Indicator</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-01-27</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>A code used to indicate the month's Safe Harbor code</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="JanuaryShrLowestCostMthlyPremAmtP" type="AmountTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>January Share Lowest Cost Monthly Premium Amount</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>January Share Lowest Cost Monthly Premium Amount</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="JulOfferOfCoverageCdP" type="OfferCoverageTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>July Offer Code</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>A code used to indicate the month's offer type</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="JulSafeHarborCdP" type="SafeHarborCdTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>July Safe Harbor Indicator</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-01-27</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>A code used to indicate the month's Safe Harbor code</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="JulyShrLowestCostMthlyPremAmtP" type="AmountTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>July Share Lowest Cost Monthly Premium Amount</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>July Share Lowest Cost Monthly Premium Amount</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="JuneShrLowestCostMthlyPremAmtP" type="AmountTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>June Share Lowest Cost Monthly Premium Amount</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>June Share Lowest Cost Monthly Premium Amount</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="JunOfferOfCoverageCdP" type="OfferCoverageTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>June Offer Code</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>A code used to indicate the month's offer type</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="JunSafeHarborCdP" type="SafeHarborCdTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>June Safe Harbor Indicator</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-01-27</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>A code used to indicate the month's Safe Harbor code</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="MarchShrLowestCostMthlyPremAmtP" type="AmountTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>March Share Lowest Cost Monthly Premium Amount</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>March Share Lowest Cost Monthly Premium Amount</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="MarOfferOfCoverageCdP" type="OfferCoverageTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>March Offer Code</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>A code used to indicate the month's offer type</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="MarSafeHarborCdP" type="SafeHarborCdTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>March Safe Harbor Indicator</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-01-27</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>A code used to indicate the month's Safe Harbor code</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="MayShrLowestCostMthlyPremAmtP" type="AmountTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>May Share Lowest Cost Monthly Premium Amount</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>May Share Lowest Cost Monthly Premium Amount</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="MayOfferOfCoverageCdP" type="OfferCoverageTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>May Offer Code</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-01-27</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>A code used to indicate the month's offer type</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="MaySafeHarborCdP" type="SafeHarborCdTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>May Safe Harbor Indicator</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-01-27</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>A code used to indicate the month's Safe Harbor code</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="NovemberShrLowestCostMthlyPremAmtP" type="AmountTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>November Share Lowest Cost Monthly Premium Amount</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>November Share Lowest Cost Monthly Premium Amount</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="NovOfferOfCoverageCdP" type="OfferCoverageTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>November Offer Code</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>A code used to indicate the month's offer type</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="NovSafeHarborCdP" type="SafeHarborCdTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>November Safe Harbor Indicator</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-01-27</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>A code used to indicate the month's Safe Harbor code</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="OctoberShrLowestCostMthlyPremAmtP" type="AmountTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>October Share Lowest Cost Monthly Premium Amount</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-01-27</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Oct Share Lowest Cost Monthly Premium Amount</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="OctOfferOfCoverageCdP" type="OfferCoverageTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>October Offer Code</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>A code used to indicate the month's offer type</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="OctSafeHarborCdP" type="SafeHarborCdTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>October Safe Harbor Indicator</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-01-27</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>A code used to indicate the month's Safe Harbor code</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="OriginalDocumentSequenceNumP" type="irs:DocumentSequenceNumType">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Original Record Sequence Number
+					</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2014-04-09</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 5.0</VersionDescriptionTxt>
+					<DescriptionTxt>The Record Sequence Number.</DescriptionTxt>
+					<DataElementId/>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="PayeeDLNP" type="DLNNumberTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Payee Data Location Number</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2014-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>The Payee Data Location Number</DescriptionTxt>
+					<DataElementId/>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="PayerDLNP" type="DLNNumberTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Payer Data Location Number</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2014-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>The Payer Data Location Number</DescriptionTxt>
+					<DataElementId/>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="TaxYrP" type="irs:YearType">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Tax Year</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2014-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Tax Year</DescriptionTxt>
+					<DataElementId/>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="DelinquentReturnCdP" type="DelinquentReturnCdTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Delinquent Return Indicator</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Delinquent Return Indicator</DescriptionTxt>
+					<DataElementId/>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="DelinquentReturnCdDtP" type="PaperDateTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Delinquent Return Indicator Date</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Delinquent Return Indicator Date</DescriptionTxt>
+					<DataElementId/>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="OfficialUseOnlyTxtP" type="OfficialUseOnlyTxtTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Correspondence Indicator</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Correspondence Indicator</DescriptionTxt>
+					<DataElementId/>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+		<xsd:element name="FilerNameP" type="String35NameTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Filer Name</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Filer Name</DescriptionTxt>
+					<DataElementId/>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element> 
+	<xsd:element name="TINTypeCdP" type="TINTypeCodeTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>TIN Type Code</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Type for Taxpayer Identification Number </DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="EmployerIDNumP" type="TINNumTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>EIN</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Employer Identification Number</DescriptionTxt>
+					<DataElementId/>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="ResponsibleBusinessEINP" type="TINNumTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>EIN</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Employer Identification Number</DescriptionTxt>
+					<DataElementId/>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="ContactPersonNameP" type="String35NameTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Contact Person Name</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Name of Person to Contact</DescriptionTxt>
+					<DataElementId/>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element> 
+	<xsd:element name="FilerStreetAddressP" type="String35TypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Filer Street Address</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Filer Street Address</DescriptionTxt>
+					<DataElementId/>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element> 
+	<xsd:element name="FilerCityorTownP" type="CityorTownTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Filer City or Town</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Filer City or Town</DescriptionTxt>
+					<DataElementId/>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element> 
+	<xsd:element name="FilerStateOrProvinceP" type="StateOrProvinceTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Filer State or Province</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Filer State or Province</DescriptionTxt>
+					<DataElementId/>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element> 
+	<xsd:element name="FilerCntryZIPorFgnPostalCdP" type="String35TypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Filer Country ZIP Code or Foreign Postal Cd</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Filer Country ZIP Code or Foreign Postal Code</DescriptionTxt>
+					<DataElementId/>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element> 
+	<xsd:element name="CorrectedCheckBoxP" type="CheckBoxTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Corrected Check Box</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Corrected Check Box</DescriptionTxt>
+					<DataElementId/>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="PolicyOriginCdP" type="PolicyOriginCodeTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Policy Origin Code</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-01-27</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Code to describe Origin of Policy</DescriptionTxt>
+					<DataElementId>
+					</DataElementId>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="EmployerNameP" type="String35NameTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Employer Name</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Employer Name</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="EmployerNameControlP" type="irs:BusinessNameControlType">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Employer Name</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Employer Name</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="EmployerTINTypeCdP" type="TINTypeCodeTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>TIN Type Code</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Type for Taxpayer Identification Number </DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="EmployerStreetAddressP" type="String35TypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Employer Street Address</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Employer Street Address</DescriptionTxt>
+					<DataElementId/>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element> 
+	<xsd:element name="EmployeeStreetAddressP" type="String35TypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Employee Street Address</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Employee Street Address</DescriptionTxt>
+					<DataElementId/>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element> 
+	<xsd:element name="EmployerCityorTownP" type="CityorTownTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Employer City or Town</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Employer City or Town</DescriptionTxt>
+					<DataElementId/>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element> 
+	<xsd:element name="EmployerStateOrProvinceP" type="StateOrProvinceTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Employer State or Province</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Employer State or Province</DescriptionTxt>
+					<DataElementId/>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element> 
+	<xsd:element name="EmployeeStateOrProvinceP" type="StateOrProvinceTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Employee State or Province</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Employee State or Province</DescriptionTxt>
+					<DataElementId/>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element> 
+	<xsd:element name="EmployerCntryZIPorFgnPostalCdP" type="String35TypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Employer Country ZIP Code or Foreign Postal Cd</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Employer Country ZIP Code or Foreign Postal Code</DescriptionTxt>
+					<DataElementId/>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element> 
+	<xsd:element name="EmployeeCntryZIPorFgnPostalCdP" type="String35TypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Employee Country ZIP Code or Foreign Postal Cd</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Employee Country ZIP Code or Foreign Postal Code</DescriptionTxt>
+					<DataElementId/>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="IssuerNameP" type="String35NameTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Issuer Name</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Issuer Name</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="IssuerTINTypeCdP" type="TINTypeCodeTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Issuer TIN Type Code</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Issuer Taxpayer Identification Number </DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="IssuerEINP" type="TINNumTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Issuer EIN</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Issuer Employer Identification Number</DescriptionTxt>
+					<DataElementId/>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="IssuerStreetAddressP" type="String35TypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Issuer Street Address</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Issuer Street Address</DescriptionTxt>
+					<DataElementId/>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element> 
+	<xsd:element name="IssuerCityorTownP" type="CityorTownTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Issuer City or Town</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Issuer City or Town</DescriptionTxt>
+					<DataElementId/>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element> 
+	<xsd:element name="EmployeeCityorTownP" type="CityorTownTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Employee City or Town</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Employee City or Town</DescriptionTxt>
+					<DataElementId/>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element> 
+	<xsd:element name="IssuerStateOrProvinceP" type="StateOrProvinceTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Issuer State or Province</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Issuer State or Province</DescriptionTxt>
+					<DataElementId/>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element> 
+	<xsd:element name="IssuerCntryZIPorFgnPostalCdP" type="String35TypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Issuer Country ZIP Code or Foreign Postal Cd</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Issuer Country ZIP Code or Foreign Postal Code</DescriptionTxt>
+					<DataElementId/>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element> 
+	<xsd:element name="CoveredIndividualGrpP" type="CoveredIndividualGrpTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Covered Individual Group</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Covered Individual Grp</DescriptionTxt>
+					<DataElementId/>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="CoveredIndividualFullNameP" type="String35NameTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Covered Individual Name</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2022-06-28</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Covered Individual Name</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="CoveredIndividualNameP" type="OtherCompletePersonNameTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Covered Individual Name</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2022-06-28</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Covered Individual Name</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element> 
+	<xsd:element name="CoveredIndividualNameControlP" type="irs:PersonNameControlType">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Covered Individual Name Control</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Covered Individual Name Control</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>	
+	<xsd:element name="EmployeeNameControlP" type="irs:PersonNameControlType">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Employee Name Control</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Employee Name Control</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>	
+	<xsd:element name="CoveredIndividualTINTypeCdP" type="TINTypeCodeTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Covered Individual TIN Type Code</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Type for Taxpayer Identification Number </DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="EmployeeTINTypeCdP" type="TINTypeCodeTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Employee TIN Type Code</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Employee TIN Type for Taxpayer Identification Number </DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="CoveredIndividualSSNP" type="TINNumTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Covered Individual SSN</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Social Security Number for Paper Based Submissions </DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element> 
+	<xsd:element name="EmployeeSSNumP" type="TINNumTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Employee SSN</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Employee Social Security Number for Paper Based Submissions </DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element> 
+	<xsd:element name="CoveredIndividualBirthDtP" type="PaperDateTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Covered Individual Date of Birth</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Covered Individual Birth Date</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="CoveredIndividualAnnualIndicatorP" type="CheckBoxTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Covered Annual Indicator</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Indicator of coverage for all 12 months</DescriptionTxt>
+					<DataElementId/>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+		<xsd:element name="CoveredIndividualMonthlyIndicatorP" type="MonthIndGrpTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Covered Individual Monthly Ind</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Indicator of coverage for each month of the year</DescriptionTxt>
+					<DataElementId/>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="ALEMemNameP" type="String35NameTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>ALE Member Name</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>ALE Member Name</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element> 
+	<xsd:element name="ALEMemNameControlP" type="irs:BusinessNameControlType">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>ALE Member Name Control</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>ALE Member Name Control</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="ALEMemTINTypeCdP" type="TINTypeCodeTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>ALE Member TIN Type Code</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Type for Taxpayer Identification Number </DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="ALEMemEINP" type="TINNumTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>EIN</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Employer Identification Number</DescriptionTxt>
+					<DataElementId/>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="ALEMemStreetAddressP" type="String35TypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>ALE Member Street Address</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>ALE Member Street Address</DescriptionTxt>
+					<DataElementId/>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element> 
+	<xsd:element name="ALEMemCityorTownP" type="CityorTownTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>ALE Member City or Town</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>ALE Member City or Town</DescriptionTxt>
+					<DataElementId/>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element> 
+	<xsd:element name="ALEMemStateOrProvinceP" type="StateOrProvinceTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>ALE Member State or Province</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>ALE Member State or Province</DescriptionTxt>
+					<DataElementId/>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element> 
+	<xsd:element name="ALEMemCntryZIPorFgnPostalCdP" type="String35TypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>ALE Member Country ZIP Code or Foreign Postal Cd</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>ALE Member Country ZIP Code or Foreign Postal Code</DescriptionTxt>
+					<DataElementId/>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element> 
+	<xsd:element name="ALEMemContactPersonNameP" type="String35NameTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>ALE Member Contact Person Name</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Name of Person to Contact</DescriptionTxt>
+					<DataElementId/>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="ALEMemContactPhoneNumP" type="ContactPhoneNumberTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>ALE Member Contact Phone Number</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Contact Phone Number</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="DGENameP" type="String35NameTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>ALE Member Name</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>ALE Member Name</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element> 
+	<xsd:element name="DGENameControlP" type="irs:BusinessNameControlType">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>ALE Member Name Control</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>ALE Member Name Control</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="DGETINTypeCdP" type="TINTypeCodeTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>ALE Member TIN Type Code</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Type for Taxpayer Identification Number </DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="DGEEINP" type="TINNumTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>EIN</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Employer Identification Number</DescriptionTxt>
+					<DataElementId/>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="DGEStreetAddressP" type="String35TypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>DGE Street Address</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>DGE Member Street Address</DescriptionTxt>
+					<DataElementId/>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element> 
+	<xsd:element name="DGECityorTownP" type="CityorTownTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>DGE Member City or Town</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>DGE Member City or Town</DescriptionTxt>
+					<DataElementId/>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element> 
+	<xsd:element name="DGEStateOrProvinceP" type="StateOrProvinceTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>DGE Member State or Province</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>DGE Member State or Province</DescriptionTxt>
+					<DataElementId/>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element> 
+	<xsd:element name="DGECntryZIPorFgnPostalCdP" type="String35TypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>DGE Country ZIP Code or Foreign Postal Cd</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>DGE Country ZIP Code or Foreign Postal Code</DescriptionTxt>
+					<DataElementId/>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element> 
+	<xsd:element name="DGEContactPersonNameP" type="String35NameTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>DGE Contact Person Name</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Name of Person to Contact</DescriptionTxt>
+					<DataElementId/>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="DGEContactPhoneNumP" type="ContactPhoneNumberTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>DGE Contact Phone Number</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Contact Phone Number</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Reported1095CCntP" type="TotalNumberNonNegativeTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Total number of Forms 1095-C submitted with this transmittal </DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Total number of Forms 1095-C submitted with this transmittal</DescriptionTxt>
+					<DataElementId>
+					</DataElementId>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Actual1095CCntP" type="TotalNumberNonNegativeTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Total number of actual Form 1095-C in the submission</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Total number of actual Form 1095-C in the submission</DescriptionTxt>
+					<DataElementId>
+					</DataElementId>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Cnt1095CSubjectToPenaltyP" type="TotalNumberNonNegativeTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Total number of Form 1095-C subject to penalty</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Total number of Form 1095-C subject to penalty</DescriptionTxt>
+					<DataElementId>
+					</DataElementId>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="AuthoritativeTransmittalIndP" type="CheckBoxTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Authoritative Transmittal Indicator</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Authoritative Transmittal Indicator</DescriptionTxt>
+					<DataElementId>
+					</DataElementId>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+		<xsd:element name="TotalNumof1095CforALEMemberP" type="TotalNumberNonNegativeTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>TotalNumof1095CforALEMember</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Total Number of Forms 1095-C filed by and/or on behalf of ALE Member</DescriptionTxt>
+					<DataElementId/>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="AggregatedGroupMemberCdP" type="MultipleCheckBoxTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Aggregated GroupMember Ind </DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Aggregated Group Member Indicator</DescriptionTxt>
+					<DataElementId>
+					</DataElementId>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="QualifyingOfferMethodIndP" type="CheckBoxTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Qualifying Offer Ind</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Qualifying offer method indicator</DescriptionTxt>
+					<DataElementId>
+					</DataElementId>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="NinetyEightPctOfferMethodIndP" type="CheckBoxTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>98% Offer Method Indicator</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>98% Offer Method Indicator</DescriptionTxt>
+					<DataElementId/>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="YearlyALEMemberDetailP" type="ALEMemberAnnualInfoGrpTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Annual Applicable Large Employer Member Detail</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Annual Applicable Large Employer Member Detail</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="MonthlyALEMemberDetailP" type="MonthlyALEMemberInfoGrpTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Monthly Applicable Large Employer Member Detail</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Monhtly Applicable Large Employer Member Detail</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="PriorYearDataIndP" type="xsd:boolean">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm> Prior Filing year Indicator
+					</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-01-15</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 6.2</VersionDescriptionTxt>
+					<DescriptionTxt>Prior Filing year Indicator</DescriptionTxt>
+					<DataElementId/>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="PriorYrFilingIndP" type="irs:IndicatorCodeType">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm> Prior Filing year Indicator
+					</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2014-04-09</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 5.0</VersionDescriptionTxt>
+					<DescriptionTxt>Prior Filing year Indicator</DescriptionTxt>
+					<DataElementId/>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="SepOfferOfCoverageCdP" type="OfferCoverageTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>September Offer Code</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>A code used to indicate the month's offer type</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="SepSafeHarborCdP" type="SafeHarborCdTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>September Safe Harbor Indicator</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-01-27</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>A code used to indicate the month's Safe Harbor code</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="SeptemberShrLowestCostMthlyPremAmtP" type="AmountTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>September Share Lowest Cost Monthly Premium Amount</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>September Share Lowest Cost Monthly Premium Amount</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="ResponsibleIndividualTINTypeCdP" type="TINTypeCodeTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>TIN Type Code</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Type for Taxpayer Identification Number </DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="ResponsibleBusinessTINTypeCdP" type="TINTypeCodeTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>TIN Type Code</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2022-06-28</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Type for Taxpayer Identification Number </DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="ResponsibleIndividualSSNP" type="TINNumTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>SSN</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Social Security Number for Paper Based Submissions </DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element> 
+	<xsd:element name="ResponsibleIndividualBirthDtP" type="PaperDateTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Date of Birth</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Responsible Individual Birth Date</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="ResponsibleStreetAddressP" type="String35TypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Responsible Individual Street Address</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2022-09-11</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Responsible Individual Street Address</DescriptionTxt>
+					<DataElementId/>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="ResponsibleCityorTownP" type="CityorTownTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Responsible Individual City or Town</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2022-09-11</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Responsible Individual City or Town</DescriptionTxt>
+					<DataElementId/>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="ResponsibleStateOrProvinceP" type="StateOrProvinceTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Responsible Individual State or Province</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2022-09-11</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Responsible Individual State or Province</DescriptionTxt>
+					<DataElementId/>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="ResponsibleCntryZIPorFgnPostalCdP" type="String35TypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Responsible Individual Country ZIP Code or Foreign Postal Cd</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2022-09-11</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Responsible IndividualCountry ZIP Code or Foreign Postal Code</DescriptionTxt>
+					<DataElementId/>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="TotalEmployeeCntP" type="TotalNumberTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Total Employee Count</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Total Employee Count for ALE Member</DescriptionTxt>
+					<DataElementId/>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Reported1095BCntP" type="TotalNumberNonNegativeTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Total number of Forms 1095-B submitted with this transmittal </DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Total number of Forms 1095-B submitted with this transmittal</DescriptionTxt>
+					<DataElementId>
+					</DataElementId>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Actual1095BCntP" type="TotalNumberNonNegativeTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Total number of actual Form 1095-B in the submission</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Total number of actual Form 1095-B in the submission</DescriptionTxt>
+					<DataElementId>
+					</DataElementId>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="Cnt1095BSubjectToPenaltyP" type="TotalNumberNonNegativeTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Total number of Form 1095-B subject to penalty</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Total number of Form 1095-B subject to penalty</DescriptionTxt>
+					<DataElementId>
+					</DataElementId>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="TotalOrigPayeeCntP" type="TotalNumberNonNegativeTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Total Original Payee Count</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2022-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Received Number of payee Original returns associated with parent 1094</DescriptionTxt>
+					<DataElementId>
+					</DataElementId>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="TotalOrigSubjPenaltyCntP" type="TotalNumberNonNegativeTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Total Original Subject to Penalty Count</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2022-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Received number of payee returns associated with the parent  1094 that are subject to penalty</DescriptionTxt>
+					<DataElementId>
+					</DataElementId>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="TotalAmendedPayeeCntP" type="TotalNumberNonNegativeTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Total Amended Payee Count</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2022-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Received number of correction payee returns associated with the parent 1094</DescriptionTxt>
+					<DataElementId>
+					</DataElementId>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="TotalAmendedSubjPenaltyCntP" type="TotalNumberNonNegativeTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Total Amended Subject to Penalty Count</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2022-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Received number of correction payee returns associated with the parent 1094 that are subject to penalty</DescriptionTxt>
+					<DataElementId>
+					</DataElementId>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="AmendedDocCdP" type="AmendedDocCdTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Amendec Document Code</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2022-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Amended Document Code</DescriptionTxt>
+					<DataElementId>
+					</DataElementId>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="JanIndP" type="CheckBoxTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Monthly CheckBox Indicator</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-01-27</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>An indicator used to indicate the month of January</DescriptionTxt>
+					<DataElementId>173994</DataElementId>
+					<Status>A</Status>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="FebIndP" type="CheckBoxTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Monthly CheckBox Indicator</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-01-27</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>An indicator used to indicate the month of February</DescriptionTxt>
+					<DataElementId>173994</DataElementId>
+					<Status>A</Status>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="MarIndP" type="CheckBoxTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Monthly CheckBox Indicator</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-01-27</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>An indicator used to indicate the month of March</DescriptionTxt>
+					<DataElementId>173994</DataElementId>
+					<Status>A</Status>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="AprIndP" type="CheckBoxTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Monthly CheckBox Indicator</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-01-27</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>An indicator used to indicate the month of April</DescriptionTxt>
+					<DataElementId>173994</DataElementId>
+					<Status>A</Status>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="MayIndP" type="CheckBoxTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Monthly CheckBox Indicator</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-01-27</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>An indicator used to indicate the month of May</DescriptionTxt>
+					<DataElementId>173994</DataElementId>
+					<Status>A</Status>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="JunIndP" type="CheckBoxTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Monthly CheckBox Indicator</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-01-27</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>An indicator used to indicate the month of June</DescriptionTxt>
+					<DataElementId>173994</DataElementId>
+					<Status>A</Status>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="JulIndP" type="CheckBoxTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Monthly CheckBox Indicator</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-01-27</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>An indicator used to indicate the month of July</DescriptionTxt>
+					<DataElementId>173994</DataElementId>
+					<Status>A</Status>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="AugIndP" type="CheckBoxTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Monthly CheckBox Indicator</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-01-27</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>An indicator used to indicate the month of August</DescriptionTxt>
+					<DataElementId>173994</DataElementId>
+					<Status>A</Status>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="SepIndP" type="CheckBoxTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Monthly CheckBox Indicator</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-01-27</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>An indicator used to indicate the month of September</DescriptionTxt>
+					<DataElementId>173994</DataElementId>
+					<Status>A</Status>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="OctIndP" type="CheckBoxTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Monthly CheckBox Indicator</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-01-27</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>An indicator used to indicate the month of October</DescriptionTxt>
+					<DataElementId>173994</DataElementId>
+					<Status>A</Status>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="NovIndP" type="CheckBoxTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Monthly CheckBox Indicator</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-01-27</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>An indicator used to indicate the month of November</DescriptionTxt>
+					<DataElementId>173994</DataElementId>
+					<Status>A</Status>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="DecIndP" type="CheckBoxTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Monthly CheckBox Indicator</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-01-27</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>An indicator used to indicate the month of December</DescriptionTxt>
+					<DataElementId>173994</DataElementId>
+					<Status>A</Status>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<!-- ====================================== -->
+	<!-- ======= Local SDT Element Declarations ====== -->
+	<!-- ====================================== -->
+	<xsd:simpleType name="PersonFirstNameTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Person First Name Type</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2022-09-06</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>Initial Version</VersionDescriptionTxt>
+					<DescriptionTxt>Typically used for a person's first name. Legal Characters: A-Z, a-z, hyphen and single space. Illegal Character: leading space, trailing space, adjacent spaces, and other symbols.</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="20"/>
+			<xsd:pattern value="([A-Za-z0-9\-\(\)&amp;&apos;] ?)*[A-Za-z0-9\-\(\)&amp;&apos;]"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="PersonLastNameTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Person Last Name Type</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2022-09-06</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>Initial Version</VersionDescriptionTxt>
+					<DescriptionTxt>Typically used for a person's last name. Legal Characters: A-Z, a-z, hyphen and single space. Illegal Character: leading space, trailing space, adjacent spaces, and other symbols.</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="20"/>
+			<xsd:pattern value="([A-Za-z0-9\-\(\)&amp;&apos;] ?)*[A-Za-z0-9\-\(\)&amp;&apos;]"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="PersonMiddleNameTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Person Middle Name Type</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2016-06-29</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>Initial Version</VersionDescriptionTxt>
+					<DescriptionTxt>Typically used for a person's Middle name. Legal Characters: A-Z, a-z, hyphen and single space. Illegal Character: leading space, trailing space, adjacent spaces, and other symbols.</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="20"/>
+			<xsd:pattern value="([A-Za-z0-9\-\(\)&amp;&apos;] ?)*[A-Za-z0-9\-\(\)&amp;&apos;]"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="AmendedDocCdTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Amended Document Code Type</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2022-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Contains a code that differentiates between a submission that contain only correction returns "G" from those that contain original or mixed original and correction returns "F"</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="20"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="BusinessNameLine1TypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Business Name Line 1 Type</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2022-06-28</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>EFileTypes, December 14, 2007</VersionDescriptionTxt>
+					<DescriptionTxt>Typically used for a business name. Legal Characters: A-Z, a-z, 0-9, hyphen, parentheses, ampersand, apostrophe and single space. Illegal Character: leading space, trailing space, adjacent spaces, and other symbols</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="35"/>
+			<xsd:pattern value="([A-Za-z0-9\-\(\)&amp;&apos;] ?)*[A-Za-z0-9\-\(\)&amp;&apos;]"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="BusinessNameLine2TypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Business Name Line 2 Type</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2022-06-28</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>EFileTypes, December 14, 2007</VersionDescriptionTxt>
+					<DescriptionTxt>Typically used for line 2 of a business name. Legal Characters: A-Z, a-z, 0-9, slash, hyphen, parentheses, ampersand, apostrophe and single space. Illegal Character: leading space, trailing space, adjacent spaces, and other symbols.</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="35"/>
+			<xsd:pattern value="([A-Za-z0-9\-\(\)&amp;&apos;] ?)*[A-Za-z0-9\-\(\)&amp;&apos;]"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="ContactPhoneNumberTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Contact Phone Number Type</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-01-27</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Phone number of the person to be contacted. Omit hyphens and
+						include extensions if applicable.</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:minLength value="7"/>
+			<xsd:maxLength value="12"/>
+			<xsd:pattern value="([0-9])*"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="DLNNumberTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>DLN Number Type</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Document Locator Number field that have a maxLength of 14
+						DLN Number = FLC + Tax Class + Doc Code + Julian Date + Block Series/Serial # + List Yr
+							FLC= 2 digits.
+							Tax Class = 1 digit.
+							Doc Code = 2 digits
+							Julian = 3 digits. 
+							Block Series/Serial # = 5 digits. 
+							List Yr. = 1 digit (Actual year last digit).</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:length value="14" fixed="true"></xsd:length>
+			<xsd:pattern value="([0-9]*)"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="DelinquentReturnCdTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Delinquent Return Indicator Type</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Delinquent Return Indicator Type - 
+					 X,P requires valid date
+					 A,C,E,N valid with no date</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+		    <xsd:maxLength value="1"></xsd:maxLength>
+		 </xsd:restriction>
+	</xsd:simpleType>	
+	<xsd:simpleType name="PaperDateTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Date type for Paper Based Submissions</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Date type for Paper Based Submissions</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:pattern value="\d{4}(0[1-9]|1[012])(0[1-9]|[12][0-9]|3[01])"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="OfficialUseOnlyTxtTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Correspondence Indicator Type</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Correspondence Indicator Type</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+		    <xsd:pattern value="[0-9\s][0-9\s]"/>
+            <xsd:maxLength value="2"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+    <xsd:simpleType name="String35NameTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Name Type</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2022-06-28</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Name Type. Legal Characters: A-Z, a-z, 0-9, hyphen, parentheses, ampersand, apostrophe and single space. 
+										Illegal Character: leading space, trailing space, adjacent spaces, and other symbols</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+		    <xsd:maxLength value="35"/>
+		    <xsd:pattern value="([A-Za-z0-9\-\(\)&amp;&apos;] ?)*[A-Za-z0-9\-\(\)&amp;&apos;]"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="String35TypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>String Type</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>String Type</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+		    <xsd:maxLength value="35"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="CityorTownTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>City or Town Type</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>City or Town Type</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+		    <xsd:maxLength value="25"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="StateOrProvinceTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>State Or Province Type</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>State Or Province Type</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+		    <xsd:maxLength value="17"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:complexType name="CoveredIndividualGrpTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Covered Individual Grp Type</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Covered Individual Grp Type</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:choice minOccurs="0"> <!-- UWR 209864 -->
+				<xsd:element ref="CoveredIndividualNameP" minOccurs="0"/>
+				<xsd:element ref="CoveredIndividualFullNameP" minOccurs="0"/>
+			</xsd:choice>
+			<xsd:element ref="CoveredIndividualNameControlP" minOccurs="0"/>
+			<xsd:element ref="CoveredIndividualTINTypeCdP" minOccurs="0"/>
+			<xsd:element ref="CoveredIndividualSSNP" minOccurs="0"/>
+			<xsd:element ref="CoveredIndividualBirthDtP" minOccurs="0"/>
+			<xsd:element ref="CoveredIndividualAnnualIndicatorP" minOccurs="0"/>
+			<xsd:element ref="CoveredIndividualMonthlyIndicatorP" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:simpleType name="CheckBoxTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Check Box type for Paper based Submissions</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Check Box type for Paper based Submissions</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="1"/>
+			<xsd:enumeration value="0"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="MultipleCheckBoxTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Check Box type for Paper based Submissions</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>1=yes box checked 
+									2=no box checked
+									3=both box checked
+									0=passed forward if no boxes checked
+					</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="0"/>
+			<xsd:enumeration value="1"/>
+			<xsd:enumeration value="2"/>
+			<xsd:enumeration value="3"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="TINNumTypeP">
+			<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>EIN Num Type</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Employer Identification number Type</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:pattern value="[0-9.]{9}"/>
+		</xsd:restriction>
+	</xsd:simpleType>		
+	<!--  Per UWR 238066 , Added enumerations 07/23/2021 -->
+	<xsd:simpleType name="OfferCoverageTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Offer Coverage Type</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Offer Coverage</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="1A"/>
+			<xsd:enumeration value="1B"/>
+			<xsd:enumeration value="1C"/>
+			<xsd:enumeration value="1D"/>
+			<xsd:enumeration value="1E"/>
+			<xsd:enumeration value="1F"/>
+			<xsd:enumeration value="1G"/>
+			<xsd:enumeration value="1H"/>
+			<xsd:enumeration value="1I"/>
+			<xsd:enumeration value="1J"/>
+			<xsd:enumeration value="1K"/>
+			<xsd:enumeration value="1L"/>
+			<xsd:enumeration value="1M"/>
+			<xsd:enumeration value="1N"/>
+			<xsd:enumeration value="1O"/>
+			<xsd:enumeration value="1P"/>
+			<xsd:enumeration value="1Q"/>
+			<xsd:enumeration value="1R"/>
+			<xsd:enumeration value="1S"/>
+			<xsd:enumeration value="1T"/>
+			<xsd:enumeration value="1U"/>
+			<xsd:enumeration value="1V"/>
+			<xsd:enumeration value="1W"/>
+			<xsd:enumeration value="1X"/>
+			<xsd:enumeration value="1Y"/>
+			<xsd:enumeration value="1Z"/>
+			<xsd:enumeration value="1a"/>
+			<xsd:enumeration value="1b"/>
+			<xsd:enumeration value="1c"/>
+			<xsd:enumeration value="1d"/>
+			<xsd:enumeration value="1e"/>
+			<xsd:enumeration value="1f"/>
+			<xsd:enumeration value="1g"/>
+			<xsd:enumeration value="1h"/>
+			<xsd:enumeration value="1i"/>
+			<xsd:enumeration value="1j"/>
+			<xsd:enumeration value="1k"/>
+			<xsd:enumeration value="1l"/>
+			<xsd:enumeration value="1m"/>
+			<xsd:enumeration value="1n"/>
+			<xsd:enumeration value="1o"/>
+			<xsd:enumeration value="1p"/>
+			<xsd:enumeration value="1q"/>
+			<xsd:enumeration value="1r"/>
+			<xsd:enumeration value="1s"/>
+			<xsd:enumeration value="1t"/>
+			<xsd:enumeration value="1u"/>
+			<xsd:enumeration value="1v"/>
+			<xsd:enumeration value="1w"/>
+			<xsd:enumeration value="1x"/>
+			<xsd:enumeration value="1y"/>
+			<xsd:enumeration value="1z"/>
+		  </xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="PolicyOriginCodeTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Policy Origination Code Type</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2022-07-23</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>The Policy origination code is as follows:
+						A=SHOP Exchange; 
+						B=Employer-Sponsored Coverage-Insured Group Health Plan;
+						C=Government Sponsored;
+						D=Open market purchase;
+						E=Multiemployer Plan;
+						F=Miscellaneous Min. Essential Coverage, 
+						G = Individual Coverage Health Reimbursement Arrangement (ICHRA)
+						</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="1"/>
+			<xsd:pattern value="[A-Ga-g]"/>  <!--  UWR 238066 , changed on 07/23/2021  -->
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="SafeHarborCdTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Safe Harbor Indictor Type</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>The Safe Harbor Indicator Type</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="2"></xsd:maxLength>
+		</xsd:restriction>
+	</xsd:simpleType>
+		<xsd:simpleType name="PlanStartMonthTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Plan Start Month Type</DictionaryEntryNm>
+					<MajorVersionNum>2</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-04-29</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA R7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Plan Start Month Type</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="2"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="Text80TypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Text 80 Character Type</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Text fields that have a maxLength of 80.</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:maxLength value="80"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="TINTypeCodeTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>TIN Request Type Code Type</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>A code type used to identify the TIN request type.
+					</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="1"/>
+			<xsd:enumeration value="2"/>
+			<xsd:enumeration value=" "/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:element name="ResponsibleBusinessNameLine1TxtP" type="BusinessNameLine1TypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Business Name Line 1 Text</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2022-06-28</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>Initial version</VersionDescriptionTxt>
+					<DescriptionTxt>Typically used for a business name. Legal Characters: A-Z, a-z, 0-9, hyphen, parentheses, ampersand, apostrophe and single space. Illegal Character: leading space, trailing space, adjacent spaces, and other symbols</DescriptionTxt>
+					<DataElementId>164033</DataElementId>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="ResponsibleBusinessNameLine2TxtP" type="BusinessNameLine2TypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Business Name Line 2 Text</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2022-06-28</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>Update to standard name</VersionDescriptionTxt>
+					<DescriptionTxt>Typically used for line 2 of a business name. Legal Characters A-Z, a-z, 0-9, slash, percent, hyphen, parentheses, ampersand, apostrophe and single space. Illegal Character leading space, trailing space, adjacent spaces, and other symbols.</DescriptionTxt>
+					<DataElementId>173111</DataElementId>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="FormTypeCdP" type="FormNameTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Form Type Code</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Form Type 1094-1095B/C</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:simpleType name="FormNameTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Form Name Type</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2015-02-20</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Form Type 1094-1095B/C</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="1094/1095B"/>
+			<xsd:enumeration value="1094/1095C"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+		<xsd:simpleType name="AmountTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Amount Type</DictionaryEntryNm>
+					<MajorVersionNum>2</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2005-06-06</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>Initial version</VersionDescriptionTxt>
+					<DescriptionTxt>Base type for US currency amount</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:nonNegativeInteger">
+			<xsd:totalDigits value="12"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+<!-- UWR 238066 -->	
+	<xsd:element name="AgeNumP" type="AgeNumTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Plan Start Month</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2022-07-23</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Employee Age Number </DescriptionTxt>
+					<DataElementId/>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:simpleType name="AgeNumTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Employee Age Number Type</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2022-07-23</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Employee Age Number Type</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:restriction base="xsd:string">
+			<xsd:pattern value="([1-9]|[1-9][0-9]|1[0-1][0-9]|120)"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:element name="AnnualICHRAZipCdP" type="irs:USZIPCdType">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Annual ICHRA ZIP Cd</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2022-07-24</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Annual ICHRA ZIP Cd</DescriptionTxt>
+					<DataElementId>
+					</DataElementId>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="MonthlyICHRAZipCdGrpP" type="MonthlyICHRAZipCdGrpTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Monthly ICHRA ZIP Grp</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2022-07-23</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0 - Initial Version</VersionDescriptionTxt>
+					<DescriptionTxt>Monthly ICHRA ZIP Grp</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+
+<xsd:complexType name="MonthlyICHRAZipCdGrpTypeP">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>ICHRA ZIP Cd By Month Type</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2022-07-23</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0 - Initial Version</VersionDescriptionTxt>
+					<DescriptionTxt>ICHRA ZIP Cd By Month Type</DescriptionTxt>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element ref="JanICHRAZipCdP" minOccurs="0" maxOccurs="1"/>
+			<xsd:element ref="FebICHRAZipCdP" minOccurs="0" maxOccurs="1"/>
+			<xsd:element ref="MarICHRAZipCdP" minOccurs="0" maxOccurs="1"/>
+			<xsd:element ref="AprICHRAZipCdP" minOccurs="0" maxOccurs="1"/>
+			<xsd:element ref="MayICHRAZipCdP" minOccurs="0" maxOccurs="1"/>
+			<xsd:element ref="JunICHRAZipCdP" minOccurs="0" maxOccurs="1"/>
+			<xsd:element ref="JulICHRAZipCdP" minOccurs="0" maxOccurs="1"/>
+			<xsd:element ref="AugICHRAZipCdP" minOccurs="0" maxOccurs="1"/>
+			<xsd:element ref="SepICHRAZipCdP" minOccurs="0" maxOccurs="1"/>
+			<xsd:element ref="OctICHRAZipCdP" minOccurs="0" maxOccurs="1"/>
+			<xsd:element ref="NovICHRAZipCdP" minOccurs="0" maxOccurs="1"/>
+			<xsd:element ref="DecICHRAZipCdP" minOccurs="0" maxOccurs="1"/>
+		</xsd:sequence>
+	</xsd:complexType>
+		<xsd:element name="JanICHRAZipCdP" type="irs:USZIPCdType">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Annual ICHRA ZIP Cd</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2022-07-24</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Jan ICHRA ZIP Cd</DescriptionTxt>
+					<DataElementId>
+					</DataElementId>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="FebICHRAZipCdP" type="irs:USZIPCdType">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Annual ICHRA ZIP Cd</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2022-07-24</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Feb ICHRA ZIP Cd</DescriptionTxt>
+					<DataElementId>
+					</DataElementId>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="MarICHRAZipCdP" type="irs:USZIPCdType">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Annual ICHRA ZIP Cd</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2022-07-24</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Mar ICHRA ZIP Cd</DescriptionTxt>
+					<DataElementId>
+					</DataElementId>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="AprICHRAZipCdP" type="irs:USZIPCdType">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Annual ICHRA ZIP Cd</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2022-07-24</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Apr ICHRA ZIP Cd</DescriptionTxt>
+					<DataElementId></DataElementId>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="MayICHRAZipCdP" type="irs:USZIPCdType">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Annual ICHRA ZIP Cd</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2022-07-24</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>May ICHRA ZIP Cd</DescriptionTxt>
+					<DataElementId></DataElementId>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="JunICHRAZipCdP" type="irs:USZIPCdType">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Annual ICHRA ZIP Cd</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2022-07-24</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Jun ICHRA ZIP Cd</DescriptionTxt>
+					<DataElementId></DataElementId>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="JulICHRAZipCdP" type="irs:USZIPCdType">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Annual ICHRA ZIP Cd</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2022-07-24</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Jul ICHRA ZIP Cd</DescriptionTxt>
+					<DataElementId></DataElementId>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="AugICHRAZipCdP" type="irs:USZIPCdType">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Annual ICHRA ZIP Cd</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2022-07-24</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Aug ICHRA ZIP Cd</DescriptionTxt>
+					<DataElementId></DataElementId>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="SepICHRAZipCdP" type="irs:USZIPCdType">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Annual ICHRA ZIP Cd</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2022-07-24</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Sep ICHRA ZIP Cd</DescriptionTxt>
+					<DataElementId></DataElementId>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="OctICHRAZipCdP" type="irs:USZIPCdType">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Annual ICHRA ZIP Cd</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2022-07-24</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Oct ICHRA ZIP Cd</DescriptionTxt>
+					<DataElementId></DataElementId>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="NovICHRAZipCdP" type="irs:USZIPCdType">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Annual ICHRA ZIP Cd</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2022-07-24</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Nov ICHRA ZIP Cd</DescriptionTxt>
+					<DataElementId></DataElementId>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	<xsd:element name="DecICHRAZipCdP" type="irs:USZIPCdType">
+		<xsd:annotation>
+			<xsd:documentation>
+				<Component>
+					<DictionaryEntryNm>Annual ICHRA ZIP Cd</DictionaryEntryNm>
+					<MajorVersionNum>1</MajorVersionNum>
+					<MinorVersionNum>0</MinorVersionNum>
+					<VersionEffectiveBeginDt>2022-07-24</VersionEffectiveBeginDt>
+					<VersionDescriptionTxt>ACA Release 7.0</VersionDescriptionTxt>
+					<DescriptionTxt>Dec ICHRA ZIP Cd</DescriptionTxt>
+					<DataElementId></DataElementId>
+				</Component>
+			</xsd:documentation>
+		</xsd:annotation>
+	</xsd:element>
+	
+</xsd:schema>
