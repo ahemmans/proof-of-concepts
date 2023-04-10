@@ -17,7 +17,7 @@ import us.gov.treasury.irs.msg.form1094_1095btransmitterupstreammessage.Form1094
 import us.gov.treasury.irs.msg.form1094_1095ctransmitterupstreammessage.Form109495CTransmittalUpstreamType;
 
 @Service
-public class Form109495ATransmittalForm extends TransmittalForm {
+public class Form1095ATransmittalForm extends TransmittalForm {
 
 	public static final String XSD_DOC = "src/main/resources/2022/MSG/IRS-Form1095ATransmissionUpstreamMessage.xsd";
 	private JAXBContext jaxbContext;
