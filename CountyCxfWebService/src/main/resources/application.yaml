@@ -57,14 +57,14 @@ spring:
       on-profile: laptop
   
 workingdir:
-  path: 'C:\Users\Anthony\Documents\My Documents\My Git\Spring-Boot-Projects\CountyCfxWebService-WorkingDir\'
+  path: ${environments.laptop.workingdir}
 
 ---
 
 spring:
   config:
     activate:
-      on-profile: hsqldb
+      on-profile: peraton
   datasource:
     driver-class-name: org.hsqldb.jdbc.JDBCDriver
     url: jdbc:hsqldb:hsql://localhost/testdb

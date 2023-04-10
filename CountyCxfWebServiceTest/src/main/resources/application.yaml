@@ -7,17 +7,6 @@ environments:
   
   peraton:
     workingdir: 'C:\Users\rhemman\Projects\proof-of-concepts\CountyCfxWebService-WorkingDir\'
-
-  postgresqldb:
-    datasource:
-      driver-class-name: org.postgresql.Driver
-      url: jdbc:postgresql://localhost:5432/counties
-      username: counties_user
-      password: counties_pwd
-    jpa:
-      database-platform: org.hibernate.dialect.PostgreSQL10Dialect
-
-  hsqldb:
     datasource:
       driver-class-name: org.hsqldb.jdbc.JDBCDriver
       url: jdbc:hsqldb:hsql://localhost/testdb
@@ -76,7 +65,8 @@ wsdl:
 context.path: com.tier3llc.countyservice
 
 workingdir:
-  path: ${environments.peraton.workingdir}
+  path: ${environments.desktop.workingdir}
+  #path: ${environments.peraton.workingdir}
   reports: ${workingdir.path}reports\
 
 ---
@@ -95,37 +85,41 @@ workingdir:
 spring:
   config:
     activate:
-      on-profile: hsqldb
+      on-profile: peraton
   datasource:
-    driver-class-name: org.hsqldb.jdbc.JDBCDriver
-    url: jdbc:hsqldb:hsql://localhost/testdb
-    username: SA
-    password:
+    driver-class-name: ${environments.peraton.datasource.driver-class-name}
+    url: ${environments.peraton.datasource.url}
+    username: ${environments.peraton.datasource.username}
+    password: ${environments.peraton.datasource.password}
   jpa:
-    database-platform: org.hibernate.dialect.HSQLDialect
+    database-platform: ${environments.peraton.jpa.database-platform}
     show-sql: true
 
+workingdir:
+  path: ${environments.peraton.workingdir}
+  reports: ${workingdir.path}reports\
+  
 ---
  
 spring:
   config:
     activate:
       on-profile: it
-  datasource:
-    driver-class-name: ${environments.hsqldb.datasource.driver-class-name}
-    url: ${environments.hsqldb.datasource.url}
-    username: ${environments.hsqldb.datasource.username}
-    password: ${environments.hsqldb.datasource.password}
-  jpa:
-    database-platform: ${environments.hsqldb.jpa.database-platform}
-    show-sql: true
+  #datasource:
+  #  driver-class-name: ${environments.peraton.datasource.driver-class-name}
+  #  url: ${environments.peraton.datasource.url}
+  #  username: ${environments.peraton.datasource.username}
+  #  password: ${environments.peraton.datasource.password}
+  #jpa:
+  #  database-platform: ${environments.peraton.jpa.database-platform}
+  #  show-sql: true
 
 ess.test.role: tester
 
 workingdir:
   #path: ${env.WORKING_DIR}\
-  path: ${environments.peraton.workingdir}
-  #path: ${environments.deskop.workingdir}
+  path: ${environments.desktop.workingdir}
+  #path: ${environments.peraton.workingdir}  
   #path: ${environments.laptop.workingdir}
 
   reports: ${workingdir.path}reports\
