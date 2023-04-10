@@ -105,21 +105,21 @@ spring:
   config:
     activate:
       on-profile: it
-  #datasource:
-  #  driver-class-name: ${environments.peraton.datasource.driver-class-name}
-  #  url: ${environments.peraton.datasource.url}
-  #  username: ${environments.peraton.datasource.username}
-  #  password: ${environments.peraton.datasource.password}
-  #jpa:
-  #  database-platform: ${environments.peraton.jpa.database-platform}
-  #  show-sql: true
+  datasource:
+    driver-class-name: ${environments.peraton.datasource.driver-class-name}
+    url: ${environments.peraton.datasource.url}
+    username: ${environments.peraton.datasource.username}
+    password: ${environments.peraton.datasource.password}
+  jpa:
+    database-platform: ${environments.peraton.jpa.database-platform}
+    show-sql: true
 
 ess.test.role: tester
 
 workingdir:
   #path: ${env.WORKING_DIR}\
-  path: ${environments.desktop.workingdir}
-  #path: ${environments.peraton.workingdir}  
+  #path: ${environments.desktop.workingdir}
+  path: ${environments.peraton.workingdir}  
   #path: ${environments.laptop.workingdir}
 
   reports: ${workingdir.path}reports\
