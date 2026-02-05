@@ -1,0 +1,54 @@
+---
+config:
+  layout: dagre
+---
+
+flowchart TB
+
+ subgraph subGraph0["Client Layer"]
+        WEB["Web Client<br>stream.html"]
+ end
+  
+ subgraph subGraph1["Presentation Layer"]
+        AC["AskController<br>REST API"]
+ end
+ 
+ subgraph subGraph2["Service Layer"]
+        ACA["SpringAIACAService"]
+        VSS["VectorStoreService"]
+        RAGS["ACARAGSubmissionSearchService"]
+        RULES["ACARulesService"]
+ end
+ 
+ subgraph subGraph3["AI/ML Components"]
+        CC["ChatClient<br>Spring AI"]
+        VS["VectorStore<br>PGVector"]
+        GEMINI["Google Gemini AI<br>gemini-2.5-flash"]
+        EMB["Text Embedding<br>text-embedding-004"]
+ end
+ 
+ subgraph Database["Database"]
+        PGDB[("PostgreSQL<br>AI_POC")]
+        VSTORE[("Vector Store<br>Table")]
+ end
+ 
+    WEB -- HTTP/REST --> AC
+    AC -- askQuestion --> ACA
+    ACA -- uses --> CC
+    ACA -- retrieves docs --> RAGS
+    ACA -- loads rules --> RULES
+    VSS -- populates --> VS
+    CC -- calls --> GEMINI
+    CC -- RAG advisor --> VS
+    VS -- stores embeddings --> EMB
+    VS -- searches --> VSTORE
+    VSS -- persists --> VSTORE
+    RAGS --> RULES
+    RAGS -- uses --> VSS
+
+    style ACA fill:#4A90E2
+    style CC fill:#E24A90
+    style VS fill:#E24A90
+    style GEMINI fill:#90E24A
+    style PGDB fill:#FFD700
+    style VSTORE fill:#FFD700

@@ -11,13 +11,15 @@ Feature: SOAP API -  AIR API Test
   	Given the request file "<request_test_file>" of formType "<formType>"
   	Then validate the request "<validateXML>"
   	And verify that each taxyr element is "<taxyr>"
+  	#When the request is submitted to the webservice
+  	#Then verify the response is valid
 
   Examples:
     | test_id  | request_test_file                     | formType | validateXML | attach_file | filing_season | taxyr | status   | business_rules | expected_response | description |
     | 1101939  | 1101939_FS22_1094_1095B_TestData.xml  | 1094B    | true        | true        | fs22          | 2021  | ACCEPTED |                |                   |             |
     | 1234567  | 1234567_FS22_1094_1095C_TestData.xml  | 1094C    | true        | true        | fs22          | 2021  | ACCEPTED |                |                   |             |
-    #| 1206598  | 1206598_1095A_AIRBR223_BirthDt.xml    | 1095A    | false       | true        | fs22          | 2021  | ACCEPTED |                |                   |             |
-    #| 1206602  | 1206602_FS22_1095A_SmokeTest.xml      | 1095A    | false       | true        | fs22          | 2021  | ACCEPTED |                |                   |             |
+    | 1206598  | 1206598_1095A_AIRBR223_BirthDt.xml    | 1095A    | false       | true        | fs22          | 2021  | ACCEPTED |                |                   |             |
+    | 1206602  | 1206602_FS22_1095A_SmokeTest.xml      | 1095A    | false       | true        | fs22          | 2021  | ACCEPTED |                |                   |             |
     #| 1196105  | scrips23.OCR1010C.2022DSIT1196105.xml | 1094CScrips | true     | true        | fs22          | 2021  | ACCEPTED |                |                   |             |
     #| 0000000  | TBD.xml                               | 1094BScrips | true     | true        | fs22          | 2021  | ACCEPTED |                |                   |             | 
         

@@ -11,13 +11,15 @@ import org.springframework.beans.factory.annotation.Value;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
-
+import io.cucumber.java.en.When;
 import lombok.extern.slf4j.Slf4j;
+import us.gov.treasury.irs.msg.forms.Form1095ATransmittalForm;
 import us.gov.treasury.irs.msg.forms.Form109495BScripsTransmittalForm;
 import us.gov.treasury.irs.msg.forms.Form109495BTransmittalForm;
 import us.gov.treasury.irs.msg.forms.Form109495CScripsTransmittalForm;
 import us.gov.treasury.irs.msg.forms.Form109495CTransmittalForm;
 import us.gov.treasury.irs.msg.forms.TransmittalForm;
+import us.gov.treasury.irs.ext.aca.air.ty22.ACABulkRequestTransmitterResponseType;
 import us.gov.treasury.irs.msg.form1094_1095bcscripsintakemessage.Form109495BTransmittalSCRIPSType;
 import us.gov.treasury.irs.msg.form1094_1095bcscripsintakemessage.Form109495CTransmittalSCRIPSType;
 import us.gov.treasury.irs.msg.form1094_1095btransmitterupstreammessage.Form109495BTrnsmtUpstreamType;
@@ -56,7 +58,8 @@ public class TransmittalFormTests extends ReportGenerator {
 	@Autowired Form109495CTransmittalForm form109495CTransmittalForm;
 	@Autowired Form109495BScripsTransmittalForm form109495BScripsTransmittalForm;
 	@Autowired Form109495CScripsTransmittalForm form109495CScripsTransmittalForm;
-		
+	@Autowired Form1095ATransmittalForm form1095ATransmittalForm;
+			
 	@Value("${workingdir.path}")
 	String workingDir;
 	
@@ -69,6 +72,8 @@ public class TransmittalFormTests extends ReportGenerator {
 	private Form109495CTransmittalUpstreamType request1094C;
 	private Form109495BTransmittalSCRIPSType request1094BScrips;
 	private Form109495CTransmittalSCRIPSType request1094CScrips;
+	private Object request1095A;
+	private ACABulkRequestTransmitterResponseType response;
 	
 	
 	/*
@@ -95,6 +100,8 @@ public class TransmittalFormTests extends ReportGenerator {
 			case "1094CScrips" :
 			case "1095CScrips" :
 				return (TransmittalForm) form109495CScripsTransmittalForm;
+			case "1094A" :
+				return (TransmittalForm) form1095ATransmittalForm;				
 		}
 		return null;		
 	}	
@@ -131,6 +138,10 @@ public class TransmittalFormTests extends ReportGenerator {
 				request1094CScrips = getTransmittalForm(formType).getFromType109495CScrips(filePath);
 				assertNotNull(request1094CScrips);
 				break;
+			case "1094A" :
+				if (_validateXML) assertTrue(getTransmittalForm(formType).isXmlValid(filePath));
+				request1095A = null;
+				break;
 		}
 	}
 	
@@ -162,7 +173,40 @@ public class TransmittalFormTests extends ReportGenerator {
 					.stream()
 					.forEach(t -> assertTrue(_taxyr.equals(t.getTaxYrP().toString())));
 				break;
+			case "1094A" :
+				//TBD
+				break;
 		}
+	}
+	
+	//@When("^the request is submitted to the webservice$")
+	public void submit_request_to_webservice() throws Throwable {
+		switch (formType) {
+			case "1094B" :
+			case "1095B" :
+				response = (ACABulkRequestTransmitterResponseType) soapConnector.callWebService(request1094B);
+				break;
+			case "1094C" :
+			case "1095C" :
+				response = (ACABulkRequestTransmitterResponseType) soapConnector.callWebService(request1094C);
+				break;
+			case "1094BScrips" :
+			case "1095BScrips" :
+				//TBD
+				break;
+			case "1094CScrips" :
+			case "1095CScrips" :
+				response = (ACABulkRequestTransmitterResponseType) soapConnector.callWebService(request1094CScrips);
+				break;
+			case "1094A" :
+				//response = (ACABulkRequestTransmitterResponseType) soapConnector.callWebService(request1095A);
+				break;
+		}
+	}
+	
+	//@Then("^verify the response is valid$")
+	public void verify_response_is_valid() throws Throwable {
+		
 	}
 	
 }

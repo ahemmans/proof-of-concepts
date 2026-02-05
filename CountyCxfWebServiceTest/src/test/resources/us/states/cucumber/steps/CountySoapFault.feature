@@ -24,7 +24,7 @@ Feature: SOAP Fault Tests -  CountyWS API Test
     | RV-03   | test_data_request_error_master.xml | mimetype             | remove       | RV03           | Required Value : mimetype |             | false	      |
     | ME-05   | test_data_request_error_master.xml | id,filename          | remove       | ME01,RV02      |                           |             | true	      |
     | ME-06   | test_data_request_error_master.xml | filename,mimetype    | empty        | RV02,RV03      |                           |             | true	      |
-    #| ME-06.1 | test_data_request_error_master.xml | filename,mimetype    | empty        | RV01,RV03      |                           | Error       | true	      |
+    | ME-06.1 | test_data_request_error_master.xml | filename,mimetype    | empty        | RV01,RV03      |                           | Error       | true	      |
     | ME-07   | test_data_request_error_master.xml | id,filename,mimetype | remove       | ME01,RV02,RV03 |                           |             | true	      |
     | ME-08   | test_data_request_error_master.xml | id,filename,mimetype | empty        | RV01,RV02,RV03 |                           |             | true	      |    
 
@@ -34,7 +34,7 @@ Feature: SOAP Fault Tests -  CountyWS API Test
   	When the SOAP test case "<test_id>" is initiated with request "<request_test_file>"
   	And the SOAP message is created
   	#Then the "<element>" element is "<remove_empty>"
-  	And the file attachment is inserted into the SOAP message : "<attach_file>"
+  	And the file attachment is inserted into the SOAP message : "<attach_fi@le>"
   	Then the SOAP message is sent
   	Then verify the SOAP response is a SOAPFault
   	And verify that errors "<error_codes>" are generated  	

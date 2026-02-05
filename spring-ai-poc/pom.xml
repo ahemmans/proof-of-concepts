@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project 
+    xmlns="http://maven.apache.org/POM/4.0.0" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>3.5.9</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+	
+	<groupId>demo</groupId>
+	<artifactId>spring-ai-poc</artifactId>
+	<version>0.1</version>
+	<packaging>jar</packaging>
+	<name>spring-ai-poc</name>
+	<description>Spring AI Proof of Concept</description>
+
+	<scm>
+		<connection>https://github.com/ahemmans/Spring-Boot-Projects.git</connection>
+		<developerConnection>https://github.com/ahemmans/Spring-Boot-Projects.git</developerConnection>
+		<tag>spring-ai</tag>
+		<url>https://github.com/ahemmans/Spring-Boot-Projects/tree/master/spring-ai-poc</url>
+	</scm>
+	
+	<properties>
+		<java.version>17</java.version>
+		<maven.compiler.source>17</maven.compiler.source>
+    	<maven.compiler.target>17</maven.compiler.target>
+		<spring-ai.version>1.1.2</spring-ai.version>
+		<gcp.project-id>gen-lang-client-0142573248</gcp.project-id>
+	</properties>
+	
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-validation</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+			 <exclusions>
+            <exclusion>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-tomcat</artifactId>
+            </exclusion>
+            <exclusion>
+          			<groupId>org.springframework.boot</groupId>
+			          <artifactId>spring-boot-starter-logging</artifactId>
+			      </exclusion>
+        </exclusions>
+		</dependency>
+		<dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-undertow</artifactId>
+    </dependency>
+		<dependency>
+			  <groupId>org.springframework.boot</groupId>
+			  <artifactId>spring-boot-starter-log4j2</artifactId>
+		</dependency>
+       		
+		<!-- Spring AI dependencies -->
+		<dependency>
+			<groupId>org.springframework.ai</groupId>
+			<artifactId>spring-ai-starter-model-google-genai</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.ai</groupId>
+			<artifactId>spring-ai-starter-model-google-genai-embedding</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.ai</groupId>
+			<artifactId>spring-ai-starter-vector-store-pgvector</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.ai</groupId>
+			<artifactId>spring-ai-advisors-vector-store</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.ai</groupId>
+			<artifactId>spring-ai-pdf-document-reader</artifactId>
+		</dependency>	    
+	  <dependency>
+       <groupId>org.springframework.ai</groupId>
+       <artifactId>spring-ai-rag</artifactId>
+    </dependency>
+  
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<scope>runtime</scope>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<optional>true</optional>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+	
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework.ai</groupId>
+				<artifactId>spring-ai-bom</artifactId>
+				<version>${spring-ai.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<build>
+	 <finalName>${project.artifactId}</finalName>
+	 
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<annotationProcessorPaths>
+						<path>
+							<groupId>org.projectlombok</groupId>
+							<artifactId>lombok</artifactId>
+						</path>
+					</annotationProcessorPaths>
+				</configuration>
+			</plugin>
+			
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<excludes>
+						<exclude>
+							<groupId>org.projectlombok</groupId>
+							<artifactId>lombok</artifactId>
+						</exclude>
+					</excludes>
+				</configuration>
+			</plugin>
+			
+			<plugin>
+			   <groupId>org.apache.maven.plugins</groupId>
+			   <artifactId>maven-assembly-plugin</artifactId>
+			   <configuration>
+			     <appendAssemblyId>false</appendAssemblyId>
+			     <tarLongFileMode>posix</tarLongFileMode>
+			     <outputDirectory>${project.build.directory}</outputDirectory>
+			     <workDirectory>${project.build.directory}/assembly</workDirectory>
+			   </configuration>
+			   <executions>
+			     <execution>
+             <id>make-src-zip</id>
+             <phase>package</phase>
+             <goals>
+               <goal>single</goal>
+             </goals>
+             <configuration>
+               <finalName>${project.artifactId}-src</finalName>
+               <formats>
+                 <format>zip</format>
+               </formats>
+               <descriptors>
+                 <descriptor>src/assembly/assembly.xml</descriptor>
+               </descriptors>
+             </configuration>  
+			     </execution>
+			   </executions>
+			</plugin>
+			
+			<plugin>
+	          <groupId>com.google.cloud.tools</groupId>
+	          <artifactId>appengine-maven-plugin</artifactId>
+	          <version>2.4.4</version>
+	          <configuration>
+	                <version>1</version>
+	                <projectId>${gcp.project-id}</projectId>
+	          </configuration>  
+	        </plugin>
+          
+		</plugins>
+	</build>
+
+  <profiles>
+    <profile>
+      <id>cloud-gcp</id>
+      <dependencies>
+        <dependency>
+            <groupId>com.google.cloud</groupId>
+            <artifactId>spring-cloud-gcp-starter</artifactId>
+            <version>7.4.3</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.google.cloud</groupId>
+            <artifactId>spring-cloud-gcp-starter-sql-postgresql</artifactId>
+            <version>7.4.3</version>
+            <scope>compile</scope>
+        </dependency>
+      </dependencies>
+      <build>
+          <plugins>
+            <plugin>
+              <groupId>com.google.cloud.tools</groupId>
+              <artifactId>appengine-maven-plugin</artifactId>
+              <version>2.4.4</version>
+              <configuration>
+                <projectId>${gcp.project-id}</projectId>
+              </configuration>  
+            </plugin>
+          </plugins>
+      </build>
+    </profile>
+  </profiles>
+   
+</project>
